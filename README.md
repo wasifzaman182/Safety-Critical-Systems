@@ -68,6 +68,36 @@ P is the number of connected components (typically 1 for a well-structured progr
 
 Considerations:
 --> CC is used to identify potential areas that may benefit from additional testing.
+
 --> Reducing cyclomatic complexity can enhance code maintainability.
 --> It is just one of many metrics used in software analysis, and it is often used in conjunction with other metrics for a more comprehensive evaluation of software quality and safety.
+
+
+
+
+# Modern risk in safety-critical software
+--> A range of risks due to the evolving tech landscape and increased complexity in their design and deployment.
+  Some of the key risks include
+
+## Cybersecurity Threats
+Unauthorized access, data breaches, and cyber-attacks can compromise the integrity and safety of software systems.
+
+## Software Complexity
+The complexity of modern safety-critical software continues to grow with advanced functionalities, integration of artificial intelligence, and intricate control systems. Increased complexity can lead to challenges in understanding, testing, and ensuring the reliability of the software.
+
+## Autonomous Systems Risks
+The development and deployment of autonomous systems, such as autonomous vehicles and drones, introduce new risks. Issues related to perception, decision-making algorithms, and the ability to handle unforeseen scenarios pose challenges in ensuring the safety of these systems
+
+## Machine Learning and AI Risks:
+Safety-critical systems incorporating machine learning and artificial intelligence algorithms face challenges in ensuring the predictability and reliability of AI-driven decisions. Understanding the behaviour of complex learning systems and validating their safety becomes crucial.
+
+## Data Integrity and Quality
+Safety-critical systems often rely on data for decision-making. Ensuring the integrity and quality of data, especially in dynamic and uncertain environments, is a challenge. Incorrect or compromised data can lead to incorrect system responses.
+
+## Regulatory Compliance Challenges
+Evolving regulations and standards for safety-critical systems can pose challenges in maintaining compliance. Adapting to changing regulatory requirements and ensuring that systems meet the latest safety standards are ongoing concerns.
+
+## Environmental Factors
+Safety-critical systems operating in challenging environments, such as extreme weather conditions or hostile territories, face additional risks. Adapting to diverse environmental factors and ensuring the robustness of systems in such conditions is a concern.
+
 

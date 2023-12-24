@@ -25,8 +25,8 @@ This Repo will have all topics of safety-critical systems which is being taught 
 --> V&V for SC software are extensive.
 --> Rigorous testing, simulation, and formal verification methods are often used to ensure that software behaves correctly under all conditions.
 
-## Integrating the legacy systems into new systems adds complexity
-## Human Factors, trying to design user-friendly systems add complexity to the systems
+#### Integrating the legacy systems into new systems adds complexity
+#### Human Factors, trying to design user-friendly systems add complexity to the systems
 
 
 

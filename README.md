@@ -101,3 +101,27 @@ Evolving regulations and standards for safety-critical systems can pose challeng
 Safety-critical systems operating in challenging environments, such as extreme weather conditions or hostile territories, face additional risks. Adapting to diverse environmental factors and ensuring the robustness of systems in such conditions is a concern.
 
 
+# IEEE Code of Ethics 
+--> In recognition of the importance of our technologies in affecting the 
+quality of life throughout the world, and in accepting a personal obligation to our profession, its 
+members and the communities we serve, do hereby commit ourselves to the highest ethical and 
+professional conduct and agree: 
+
+## To uphold the highest standards of integrity, responsible behaviour, and ethical conduct in professional activities.
+  1. Prioritize the safety, health, and welfare of the public in professional activities.
+  2. Strive to comply with ethical design principles and promote sustainable development practices.
+  3. Protect the privacy of individuals and disclose factors that might pose risks to the public or the environment
+  4. Improve public and individual understanding of the capabilities and societal implications of both conventional and emerging technologies, including intelligent systems.
+  5. Avoid real or perceived conflicts of interest, and disclose them when they exist.
+  6. Avoid engaging in unlawful conduct in professional activities and reject bribery in all its forms
+  7. Seek, accept, and offer honest criticism of technical work. Acknowledge and correct errors. Be honest and realistic in making claims or estimates based on available data. Credit properly the contributions of others.
+  8. Maintain and improve technical competence. Undertake technological tasks for others only if qualified by training or experience, or after full disclosure of pertinent limitations.
+  9. Make the rules simple to understand. This emphasizes clarity and accessibility in ethical guidelines.
+
+## To treat all persons fairly and with respect, to avoid harassment or discrimination, and to avoid injuring others. 
+  1. Treat everyone fairly and with respect. Do not discriminate based on race, religion, gender, disability, age, national origin, sexual orientation, gender identity, or gender expression.
+  2. Do not engage in any form of harassment, including sexual harassment or bullying behaviour.
+  3. Avoid causing harm to others, their property, reputation, or employment. Refrain from false or malicious actions, rumours, or any other verbal or physical abuse.
+
+## To strive to ensure this code is upheld by colleagues and co-workers.
+  1. to support colleagues and co-workers in following this code of ethics, to strive to ensure the code is upheld, and to not retaliate against individuals reporting a violation.  

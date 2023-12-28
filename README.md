@@ -202,3 +202,63 @@ Clearly define and document high-level requirements, considering both functional
 
 ## Continuous Improvement
 --> Establish a culture of continuous improvement. Collect feedback from operational experiences, incidents, and audits to drive improvements in processes, tools, and the overall system.
+
+
+# Unified process and ICE61508
+
+  **Note**
+  1. The Rational Unified Process (RUP) described is a software engineering process
+  2. It provides a disciplined approach to assigning and managing tasks and responsibilities within a development organization.
+  3. Its goal is to ensure the production of high-quality software that meets the needs of its end users within a predictable schedule and budget.
+  4. IEC61508 is accepted as a generic basis for standards in all industrial sectors and is the basis for newer reference literature like [25] [18] [24] within the development of safety- 
+     critical systems.
+
+## ICE61508
+  1. IEC61508 is a standard for developing safety-critical software and a framework for developing domain-specific safety standards.
+  2. The standard has an integrated approach to achieve and assess the functional safety of a system and all of its components.
+
+The standard of ICE61508 is in 7 different parts but we will focus on 1 to 3
+
+## Purpose and Scope
+  ### primary purpose
+  1. The primary purpose is to provide a ”unified approach” for all safety lifecycle activities that is rational and consistent.
+  2. As such, the standard covers all lifecycle phases for all system components.
+  3. A fundamental premise is the risk-based determination of safety integrity levels (SILs).
+
+### Secondary purpose 
+  1.  The secondary purpose of IEC61508 is to facilitate the development of industry-specific standards, which have been successfully achieved. EN50128:1997, the MISRA
+ Guidelines and the SEMSPLC Guidelines are examples of application-specific standards derived from IEC16508.
+
+### Third purpose
+ 1. IEC61508 applies to any safety-related software which, as defined by Parts 1 and 2, includes: (a) software that is part of a safety-related system; (b) software that is used to develop a safety-related system; and (c) the operating system, system software, communication software, human-computer interface (HCI) functions, utilities, and software engineering tools used with (a) or (b) above.
+
+## Definitions and concepts in ICE61508
+1.** ”safety”** is defined as freedom from unacceptable risk.
+2. **”risk”** is defined as the combination of the probability of occurrence of harm and the severity of that harm.
+3.** ”harm”** is defined as a physical injury or damage to people's health either directly or indirectly due to damage to property or the environment.
+4. **”A hazard”** is defined as the potential source of harm.
+ This implies that to say something about safety, you have to identify hazards and their effects and show how these hazards are handled within the system- or not.
+
+## Safety integrity and functional safety
+1. Safety integrity is like measuring how well a safety system does its job. It's about figuring out the chance that the system will do what it's supposed to do when needed.
+**Example:** If you have a safety system in a car that's meant to deploy the airbags during a crash, safety integrity would measure how likely it is that the airbags will indeed deploy when a crash happens.
+
+2. Functional safety is all about making sure that a safety system can do the things it's supposed to do to keep things safe. It's about the system's ability to take the right actions to prevent accidents or keep things under control.
+**Example:** Going back to the car example, if there's a safety system that helps the car stay on the road and avoid collisions, functional safety ensures that this system works as intended to maintain a safe driving state.
+
+## Safety lifecycle
+ 1. IEC61508 addresses the safety requirements in all lifecycle stages, from concept to decommissioning. The safety lifecycle in Figure 2.1 is a model for identifying the activities
+ appropriate to the assessment of safety-related systems.
+![2 1](https://github.com/wasifzaman182/Safety-Critical-Systems/assets/75499379/7ea24923-5054-436a-8012-a2d61a9f79a5)
+
+## A risk-based approach
+1. A risk-based approach is about being super careful, thinking ahead about what could go wrong, making smart choices to make things safer, proving that it works, and being responsible for those decisions.
+
+## ALARP
+ ### Tolerable Risk:
+1. Tolerable risk means finding a level of risk that we can live with or accept. It's about deciding how much risk is okay, considering the possible consequences of accidents.
+**Example:** Imagine you're building a playground. You want it to be fun but safe. Tolerable risk is like deciding on a level of excitement (risk) that kids can enjoy without getting seriously hurt.
+
+### ALARP (As Low As Reasonably Practicable):
+1. ALARP is about making risks as low as possible without going to extreme measures. It recognizes that, in some situations, it's not realistic to aim for zero risk, but we should do everything reasonable to make things safe.
+**Example**: Think of driving a car. You want to reduce the risk of accidents as much as possible (ALARP), but you also understand that you can't eliminate all risk. So, you wear a seatbelt and follow traffic rules to make it as safe as reasonably possible.

@@ -260,5 +260,5 @@ The standard of ICE61508 is in 7 different parts but we will focus on 1 to 3
 **Example:** Imagine you're building a playground. You want it to be fun but safe. Tolerable risk is like deciding on a level of excitement (risk) that kids can enjoy without getting seriously hurt.
 
 ### ALARP (As Low As Reasonably Practicable):
-1. ALARP is about making risks as low as possible without going to extreme measures. It recognizes that, in some situations, it's not realistic to aim for zero risk, but we should do everything reasonable to make things safe.
+1. ALARP is about making risks as low as possible without going to extreme measures. It recognizes that, in some situations, it's not realistic to aim for zero risk, but we should do everything reasonable to make things safe. [^]
 **Example**: Think of driving a car. You want to reduce the risk of accidents as much as possible (ALARP), but you also understand that you can't eliminate all risk. So, you wear a seatbelt and follow traffic rules to make it as safe as reasonably possible.

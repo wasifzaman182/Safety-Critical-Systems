@@ -297,3 +297,22 @@ The standard of ICE61508 is in 7 different parts but we will focus on 1 to 3
 
  ### Avoiding Assumptions:
  Don't assume correct functionality guarantees safety. Validate safety independently and use external assessments for added confidence.
+
+## Compliance
+ ### "Shall" Indicates Strict Compliance:
+ When a requirement uses "shall," it means it must be strictly followed to claim conformity with the standard.
+
+ ### "Should" or "Recommended" Allows Flexibility:
+ "Should" or "recommended" suggests a preferred course of action but doesn't exclude other possibilities. It's a suggestion, not a strict requirement. 
+
+### Normative Elements Define Requirements:
+Normative elements outline provisions necessary for claiming compliance. They often contain both "shall" and "should.
+
+### IEC 61508 Normative Elements:
+Parts 1, 2, 3, and 4 contain normative elements, setting out requirements for compliance. Parts 5, 6, and 7 don't have normative requirements.
+
+### Informative Elements Provide Additional Info:
+Informative elements offer extra insights but aren't mandatory for claiming compliance. Text in informative elements doesn't include "shall."
+# To be continued.............. page-no
+
+

@@ -262,3 +262,38 @@ The standard of ICE61508 is in 7 different parts but we will focus on 1 to 3
 ### ALARP (As Low As Reasonably Practicable):
 1. ALARP is about making risks as low as possible without going to extreme measures. It recognizes that, in some situations, it's not realistic to aim for zero risk, but we should do everything reasonable to make things safe. [^]
 **Example**: Think of driving a car. You want to reduce the risk of accidents as much as possible (ALARP), but you also understand that you can't eliminate all risk. So, you wear a seatbelt and follow traffic rules to make it as safe as reasonably possible.
+
+### Determining Acceptable Risk:
+1. In Simple Words: Deciding what level of risk is acceptable is like weighing the benefits and efforts. If the benefits are huge, we might accept a bit more risk. If reducing risk requires a lot of effort and the benefits are small, we might accept a bit more risk too.
+**Example:** When deciding safety measures for a new technology, like a smartphone, you consider how much people will benefit from it and how hard it would be to make it completely risk-free.
+![2 2](https://github.com/wasifzaman182/Safety-Critical-Systems/assets/75499379/da4315c6-c25e-4a9a-8d21-f6692b410940)
+
+
+## Safety Integrity Levels (SILs) 
+  ### SIL Represents:
+  SIL is like a safety target that helps make systems more reliable. It doesn't measure risk directly
+
+  ### Safety Management:
+  SIL guides how seriously we take safety in the development process. The higher the SIL, the more rigorous the safety measures we use
+
+  ### Absolute Safety:
+  Just because we reach a certain SIL doesn't mean the system is entirely safe. It gives us confidence but not a guarantee
+
+  ### Risk Management:
+  Steps like analyzing software risks, determining SIL, setting safety requirements, and controlling risks are all part of the process. Assessing remaining risks helps fine-tune safety measures.
+
+  ### Controlling Factors for Safety:
+  IEC 61508 focuses on controlling factors like engineering techniques, software design, and quality assurance methods. These factors are matched to the required SIL level.
+
+## Confidence of safety
+  ### Plan Safety in Advance:
+  Instead of assuming something is safe if it functions correctly, IEC 61508 advises planning for safety and confidence from the start.
+
+ ### Independent Safety Requirements:
+ Safety requirements should be separate from functional ones, stating clearly when and how they'll be met.
+
+ ### Independent Validation:
+ Safety requirements must be independently validated to ensure they work as intended.
+
+ ### Avoiding Assumptions:
+ Don't assume correct functionality guarantees safety. Validate safety independently and use external assessments for added confidence.

@@ -502,3 +502,49 @@ Informative elements offer extra insights but aren't mandatory for claiming comp
 ### Quantification:
   Quantify the percentage of successful builds.
   Measure the time taken for each build.
+
+# Stages in process control
+  ## Data Safety:
+   1. Software-generated data is used for safety-critical decisions.
+   2. Emphasis on the importance of data integrity in safety-critical systems.
+   3. Software is used in design analysis, and safety-critical data is stored in databases.
+
+  ## Abstraction from Physical Design:
+   1. Software engineers are involved in system design.
+   2. Common errors in operational software are often related to requirements.
+   3. Completeness in requirements is highlighted as a particular challenge.
+   4. Software failure modes differ from hardware, and software usually does what it is instructed to do.
+
+  ## Safety vs. Reliability:
+   1. Safety and reliability require different development approaches.
+   2. Reliability, historically emphasized in hardware design, may not be sufficient for safety.
+   3. Examples from FAA reports highlight the need for ultra-high reliability in safety-critical systems.
+
+  ## Software Safety Basics:
+   1. The challenge is determining how safe is "safe enough" without over- or under-designing a system.
+   2. Thresholds must be established based on risk-based assessments and hazard analyses.
+   3. Differentiates between demand mode (periodic or on-demand use) and continuous mode (continuous operation for an intended task).
+      
+      ### Demand Mode
+        **Usage Pattern**: In demand mode, the system is used periodically or on demand.
+        **Operational Characteristics**: The system operates intermittently based on specific needs or requests.
+        **Examples**: A system might be activated or used when a certain condition occurs or when a user requests it. For example, an emergency response
+                      system that is activated when an emergency button is pressed.
+      ### Continuous Mode:
+        **Usage Pattern:** In continuous mode, the system operates continuously for an intended task.
+        **Operational Characteristics**: The system is designed to operate continuously without significant interruptions.
+         **Examples:** Systems that are required to provide continuous monitoring or control, such as a safety-critical process control system in a
+                       manufacturing plant or a continuous monitoring system for environmental conditions.
+      
+  ## Software Reliability Basics:
+   1. Defines software reliability as a measure of confidence that software produces accurate, consistent, and repeatable results.
+   2. Considerations under various operational loads and in the intended environment.
+
+  ## The Problem to be Solved:
+   1. Identifies the lack of appropriate constraints on design as the primary safety problem in computer-based systems.
+   2. The role of the system safety engineer is to identify and enforce design constraints necessary for safety.
+
+  ## Most Common Software Errors:
+   1. Highlights that most safety-related software errors can be traced back to requirements rather than coding errors.
+   2. Understanding the software process is crucial for the development of safety-critical software-intensive systems.
+

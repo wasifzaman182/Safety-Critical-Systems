@@ -548,3 +548,28 @@ Informative elements offer extra insights but aren't mandatory for claiming comp
    1. Highlights that most safety-related software errors can be traced back to requirements rather than coding errors.
    2. Understanding the software process is crucial for the development of safety-critical software-intensive systems.
 
+# ACM/IEEE Code of Ethics (The Role of the Software and Systems Engineer)
+  ## Public: 
+  1. Software engineers shall act consistently in the public interest.
+     
+ ## Client And Employer: 
+  1. Software engineers shall act in a manner that is in the best interests of their client and employer consistent with the public interest.
+ 
+ ## Product: 
+ 1. Software engineers shall ensure that their products and related modifications meet the highest professional standards possible.
+ 
+ ## Judgment: 
+  1. Software engineers shall maintain integrity and independence in their professional judgment.
+
+ ## Management: 
+  1. Software engineering managers and leaders shall subscribe to and promote an ethical approach to the management of software development and maintenance.
+ 
+ ## Profession: 
+  1. Software engineers shall advance the integrity and reputation of the profession consistent with the public interest.
+
+ ## Colleagues: 
+  1. Software engineers shall be fair to and supportive of their colleagues.
+ 
+ ## Self: 
+  1. Software engineers shall participate in lifelong learning regarding the practice of their profession and shall promote an ethical approach to the practice of 
+     the profession.

@@ -2,611 +2,624 @@
 This Repo will have all topics of safety-critical systems which is being taught in the HIS program at Frankfurt University
 
 # Complexity in software development 
---> Complexity in software development refers to the complex nature of designing, implementing, and maintaining software that plays a crucial role in ensuring a system's safety and reliability.
+    --> Complexity in software development refers to the complex nature of designing, implementing, and maintaining software that plays a crucial role in ensuring a system's safety and       
+        reliability.
 
 --> Here are the some aspects
 
-## Stringent Requirements 
-  --> SCSs often have stringent and precise requirements that must be met.
-  --> These requirements come from regulatory bodies, industry standards, or specific safety standards applicable to the domain.
+### Stringent Requirements 
+    --> SCSs often have stringent and precise requirements that must be met.
+    --> These requirements come from regulatory bodies, industry standards, or specific safety standards applicable to the domain.
 
-## Integration and Compliance
---> SCS is subject to rigorous certification processes to ensure it complies with safety standards.
---> The documentation and evidence required for certification can significantly increase the complexity of the development process.
+### Integration and Compliance
+    --> SCS is subject to rigorous certification processes to ensure it complies with safety standards.
+    --> The documentation and evidence required for certification can significantly increase the complexity of the development process.
 
-## Fault Tolerance and Redundancy
---> Building bag/error-free systems with redundancy is common in SC Applications.
---> Implementation and testing redundancy mechanisms, such as backup systems or failover strategies, add complexity to the software architecture. 
+### Fault Tolerance and Redundancy
+    --> Building bag/error-free systems with redundancy is common in SC Applications.
+    --> Implementation and testing redundancy mechanisms, such as backup systems or failover strategies, add complexity to the software architecture. 
 
-## Real-time constraints 
---> SCS meeting deadlines and response time requirements add complexity to software design
+### Real-time constraints 
+    --> SCS meeting deadlines and response time requirements add complexity to software design
 
-## Verification and Validation
---> V&V for SC software are extensive.
---> Rigorous testing, simulation, and formal verification methods are often used to ensure that software behaves correctly under all conditions.
-
---> Integrating the legacy systems into new systems adds complexity
---> Human Factors, trying to design user-friendly systems add complexity to the systems
-
-
-
-
+### Verification and Validation
+    --> V&V for SC software are extensive.
+    --> Rigorous testing, simulation, and formal verification methods are often used to ensure that software behaves correctly under all conditions.
+    
+    --> Integrating the legacy systems into new systems adds complexity
+    --> Human Factors, trying to design user-friendly systems add complexity to the systems
+    
 
 # Complexity Metrics in SCS
---> Complexity metrics in SCS are measures used to quantify the intricacy(detail Small part of a system) and intricacies of the software or system design.
---> These metrics help assess the potential challenges and risks associated with managing and maintaining safety-critical software.
+    --> Complexity metrics in SCS are measures used to quantify the intricacy(detail Small part of a system) and intricacies of the software or system design.
+    --> These metrics help assess the potential challenges and risks associated with managing and maintaining safety-critical software.
 
 Below are some of them.
 
 ## Halstead Complexity Metrics
-Developed by Maurice Halstead, these metrics include measures such as program length, vocabulary, volume, difficulty, and effort. They provide insights into the complexity of software based on the number of operators and operands.
+    Developed by Maurice Halstead, these metrics include measures such as program length, vocabulary, volume, difficulty, and effort. They provide insights into the complexity of software 
+    based on the number of operators and operands.
 
 ## McCabe's Complexity (or Cyclomatic Complexity) Metrics
-Derived from Thomas J. McCabe's work, these metrics quantify the complexity of a program by counting the number of decision points and loops. A higher value indicates a more complex code structure.
+    Derived from Thomas J. McCabe's work, these metrics quantify the complexity of a program by counting the number of decision points and loops. A higher value indicates a more complex code 
+    structure.
 
 ## Depth of Inheritance Tree (DIT)
-DIT measures the number of levels in the inheritance hierarchy for a class. In safety-critical systems, excessive inheritance depth can lead to increased complexity and potential difficulties in understanding and maintaining the software.
+    DIT measures the number of levels in the inheritance hierarchy for a class. In safety-critical systems, excessive inheritance depth can lead to increased complexity and potential 
+    difficulties in understanding and maintaining the software.
 
 ## Fan-In and Fan-Out
-Fan-In measures the number of functions or methods that call a particular function or method. Fan-Out measures the number of functions or methods called by a specific function or method.
+    Fan-In measures the number of functions or methods that call a particular function or method. Fan-Out measures the number of functions or methods called by a specific function or method.
 
 ## Coupling and Cohesion Metrics
-Metrics related to the coupling and cohesion of software components provide insights into how interconnected and independent different parts of the system are. Low coupling and high cohesion are generally desirable in safety-critical systems.
+    Metrics related to the coupling and cohesion of software components provide insights into how interconnected and independent different parts of the system are. Low coupling and high 
+    cohesion are generally desirable in safety-critical systems.
 
 ## Component Interactions
-Analyzing the number and nature of interactions between components or modules can provide insights into the potential complexity of the system's behaviour.
+    Analyzing the number and nature of interactions between components or modules can provide insights into the potential complexity of the system's behaviour.
 
 ## Cyclomatic Complexity (CC):
-Definition: Cyclomatic Complexity is a metric developed by Thomas J. McCabe that quantifies the complexity of a program by measuring the number of independent paths through the source code. It provides insights into the software's structural complexity based on the control flow of the program.
-
-Calculation: The cyclomatic complexity is calculated using the formula:
-CC=E−N+2P
-where:
-E is the number of edges in the program's control flow graph.
-N is the number of nodes in the graph.
-P is the number of connected components (typically 1 for a well-structured program)
-
-Considerations:
---> CC is used to identify potential areas that may benefit from additional testing.
-
---> Reducing cyclomatic complexity can enhance code maintainability.
---> It is just one of many metrics used in software analysis, and it is often used in conjunction with other metrics for a more comprehensive evaluation of software quality and safety.
-
-
-
+    Definition: Cyclomatic Complexity is a metric developed by Thomas J. McCabe that quantifies the complexity of a program by measuring the number of independent paths through the source code. It provides insights into the software's structural complexity based on the control flow of the program.
+    
+    Calculation: The cyclomatic complexity is calculated using the formula:
+    CC=E−N+2P
+    where:
+    E is the number of edges in the program's control flow graph.
+    N is the number of nodes in the graph.
+    P is the number of connected components (typically 1 for a well-structured program)
+    
+    Considerations:
+    --> CC is used to identify potential areas that may benefit from additional testing.
+    
+    --> Reducing cyclomatic complexity can enhance code maintainability.
+    --> It is just one of many metrics used in software analysis, and it is often used in conjunction with other metrics for a more comprehensive evaluation of software quality and safety.
+  
 
 # Modern risk in safety-critical software
 --> A range of risks due to the evolving tech landscape and increased complexity in their design and deployment.
   Some of the key risks include
 
-## Cybersecurity Threats
-Unauthorized access, data breaches, and cyber-attacks can compromise the integrity and safety of software systems.
+### Cybersecurity Threats
+    Unauthorized access, data breaches, and cyber-attacks can compromise the integrity and safety of software systems.
 
-## Software Complexity
-The complexity of modern safety-critical software continues to grow with advanced functionalities, integration of artificial intelligence, and intricate control systems. Increased complexity can lead to challenges in understanding, testing, and ensuring the reliability of the software.
+### Software Complexity
+    The complexity of modern safety-critical software continues to grow with advanced functionalities, integration of artificial intelligence, and intricate control systems. Increased       
+    complexity can lead to challenges in understanding, testing, and ensuring the reliability of the software.
 
-## Autonomous Systems Risks
-The development and deployment of autonomous systems, such as autonomous vehicles and drones, introduce new risks. Issues related to perception, decision-making algorithms, and the ability to handle unforeseen scenarios pose challenges in ensuring the safety of these systems
+### Autonomous Systems Risks
+    The development and deployment of autonomous systems, such as autonomous vehicles and drones, introduce new risks. Issues related to perception, decision-making algorithms, and the 
+    ability to handle unforeseen scenarios pose challenges in ensuring the safety of these systems
 
-## Machine Learning and AI Risks:
-Safety-critical systems incorporating machine learning and artificial intelligence algorithms face challenges in ensuring the predictability and reliability of AI-driven decisions. Understanding the behaviour of complex learning systems and validating their safety becomes crucial.
+### Machine Learning and AI Risks:
+    Safety-critical systems incorporating machine learning and artificial intelligence algorithms face challenges in ensuring the predictability and reliability of AI-driven decisions. 
+    Understanding the behaviour of complex learning systems and validating their safety becomes crucial.
 
-## Data Integrity and Quality
-Safety-critical systems often rely on data for decision-making. Ensuring the integrity and quality of data, especially in dynamic and uncertain environments, is a challenge. Incorrect or compromised data can lead to incorrect system responses.
+### Data Integrity and Quality
+    Safety-critical systems often rely on data for decision-making. Ensuring the integrity and quality of data, especially in dynamic and uncertain environments, is a challenge. Incorrect or 
+    compromised data can lead to incorrect system responses.
 
-## Regulatory Compliance Challenges
-Evolving regulations and standards for safety-critical systems can pose challenges in maintaining compliance. Adapting to changing regulatory requirements and ensuring that systems meet the latest safety standards are ongoing concerns.
+### Regulatory Compliance Challenges
+    Evolving regulations and standards for safety-critical systems can pose challenges in maintaining compliance. Adapting to changing regulatory requirements and ensuring that systems meet 
+    the latest safety standards are ongoing concerns.
 
-## Environmental Factors
-Safety-critical systems operating in challenging environments, such as extreme weather conditions or hostile territories, face additional risks. Adapting to diverse environmental factors and ensuring the robustness of systems in such conditions is a concern.
-
+### Environmental Factors
+    Safety-critical systems operating in challenging environments, such as extreme weather conditions or hostile territories, face additional risks. Adapting to diverse environmental factors     and ensuring the robustness of systems in such conditions is a concern.
 
 # IEEE Code of Ethics 
---> In recognition of the importance of our technologies in affecting the 
-quality of life throughout the world, and in accepting a personal obligation to our profession, its 
-members and the communities we serve, do hereby commit ourselves to the highest ethical and 
-professional conduct and agree: 
+    --> In recognition of the importance of our technologies in affecting the 
+    quality of life throughout the world, and in accepting a personal obligation to our profession, its 
+    members and the communities we serve, do hereby commit ourselves to the highest ethical and 
+    professional conduct and agree: 
 
-## To uphold the highest standards of integrity, responsible behaviour, and ethical conduct in professional activities.
-  1. Prioritize the safety, health, and welfare of the public in professional activities.
-  2. Strive to comply with ethical design principles and promote sustainable development practices.
-  3. Protect the privacy of individuals and disclose factors that might pose risks to the public or the environment
-  4. Improve public and individual understanding of the capabilities and societal implications of both conventional and emerging technologies, including intelligent systems.
-  5. Avoid real or perceived conflicts of interest, and disclose them when they exist.
-  6. Avoid engaging in unlawful conduct in professional activities and reject bribery in all its forms
-  7. Seek, accept, and offer honest criticism of technical work. Acknowledge and correct errors. Be honest and realistic in making claims or estimates based on available data. Credit properly the contributions of others.
-  8. Maintain and improve technical competence. Undertake technological tasks for others only if qualified by training or experience, or after full disclosure of pertinent limitations.
-  9. Make the rules simple to understand. This emphasizes clarity and accessibility in ethical guidelines.
+### To uphold the highest standards of integrity, responsible behaviour, and ethical conduct in professional activities.
+    1. Prioritize the safety, health, and welfare of the public in professional activities.
+    2. Strive to comply with ethical design principles and promote sustainable development practices.
+    3. Protect the privacy of individuals and disclose factors that might pose risks to the public or the environment
+    4. Improve public and individual understanding of the capabilities and societal implications of both conventional and emerging technologies, including intelligent systems.
+    5. Avoid real or perceived conflicts of interest, and disclose them when they exist.
+    6. Avoid engaging in unlawful conduct in professional activities and reject bribery in all its forms
+    7. Seek, accept, and offer honest criticism of technical work. Acknowledge and correct errors. Be honest and realistic in making claims or estimates based on available data. Credit properly the contributions of others.
+    8. Maintain and improve technical competence. Undertake technological tasks for others only if qualified by training or experience, or after full disclosure of pertinent limitations.
+    9. Make the rules simple to understand. This emphasizes clarity and accessibility in ethical guidelines.
 
-## To treat all persons fairly and with respect, to avoid harassment or discrimination, and to avoid injuring others. 
-  1. Treat everyone fairly and with respect. Do not discriminate based on race, religion, gender, disability, age, national origin, sexual orientation, gender identity, or gender expression.
-  2. Do not engage in any form of harassment, including sexual harassment or bullying behaviour.
-  3. Avoid causing harm to others, their property, reputation, or employment. Refrain from false or malicious actions, rumours, or any other verbal or physical abuse.
+### To treat all persons fairly and with respect, to avoid harassment or discrimination, and to avoid injuring others. 
+    1. Treat everyone fairly and with respect. Do not discriminate based on race, religion, gender, disability, age, national origin, sexual orientation, gender identity, or gender     
+       expression.
+    2. Do not engage in any form of harassment, including sexual harassment or bullying behaviour.
+    3. Avoid causing harm to others, their property, reputation, or employment. Refrain from false or malicious actions, rumours, or any other verbal or physical abuse.
 
-## To strive to ensure this code is upheld by colleagues and co-workers.
-  1. to support colleagues and co-workers in following this code of ethics, to strive to ensure the code is upheld, and to not retaliate against individuals reporting a violation.  
-
+### To strive to ensure this code is upheld by colleagues and co-workers.
+    1. to support colleagues and co-workers in following this code of ethics, to strive to ensure the code is upheld, and to not retaliate against individuals reporting a violation.  
 
 # Process for safety and reliability
-  --> Ensuring safety and reliability in critical systems involves a systematic and rigorous process throughout the entire lifecycle of the system.
-  Below is an overview 
+    --> Ensuring safety and reliability in critical systems involves a systematic and rigorous process throughout the entire lifecycle of the system.
+        Below is an overview 
 
-## Requirements Analysis:
---> Safety and Reliability Requirements: Clearly define safety and reliability requirements at the beginning of the project. These requirements should be specific, measurable, and achievable.
+### Requirements Analysis:
+    --> Safety and Reliability Requirements: Clearly define safety and reliability requirements at the beginning of the project. These requirements should be specific, measurable, and 
+        achievable.
 
-## System Design:
-Failure Modes and Effects Analysis (FMEA): Identify potential failure modes of components and systems. Assess the impact of these failures on the overall system and prioritize them for mitigation.
+### System Design:
+    Failure Modes and Effects Analysis (FMEA): Identify potential failure modes of components and systems. Assess the impact of these failures on the overall system and prioritize them for 
+    mitigation.
 
-Fault Tree Analysis (FTA): Analyze how individual faults or failures contribute to system-level failures. This helps in understanding the relationships between different failure events.
+### Fault Tree Analysis (FTA): 
+     Analyze how individual faults or failures contribute to system-level failures. This helps in understanding the relationships between different failure events.
 
-Redundancy and Diversity: Incorporate redundancy and diversity in critical components to enhance reliability. Redundancy involves having backup systems, while diversity involves using different methods or components to achieve the same function.
+### Redundancy and Diversity: 
+    Incorporate redundancy and diversity in critical components to enhance reliability. Redundancy involves having backup systems, while diversity involves using different methods or 
+    components to achieve the same function.
 
-## Development and Implementation:
-Standards Compliance: Adhere to industry standards and regulations specific to safety and reliability. Compliance with standards ensures that the system meets established criteria for safety and reliability.
+### Development and Implementation:
+    1. Standards Compliance: Adhere to industry standards and regulations specific to safety and reliability. Compliance with standards ensures that the system meets established criteria for 
+       safety and reliability.
+    2. Testing and Validation: Conduct thorough testing, including functional testing, performance testing, and stress testing. Validation involves ensuring that the system meets the 
+       specified requirements and operates reliably under normal and extreme conditions.
 
-Testing and Validation: Conduct thorough testing, including functional testing, performance testing, and stress testing. Validation involves ensuring that the system meets the specified requirements and operates reliably under normal and extreme conditions.
+### Operational Phase:
+    1. Monitoring and Maintenance: Implement continuous monitoring of system performance during its operational phase. Regular maintenance and inspections help identify and address potential 
+       issues before they lead to failures.
+    2. Incident Reporting and Analysis: Establish a system for reporting and analyzing incidents or failures. Learn from incidents to improve the safety and reliability of the system.
+    3. Software and Firmware Updates: Keep software and firmware up-to-date with the latest security patches and improvements. Regular updates can address vulnerabilities and enhance system 
+       reliability.
 
-## Operational Phase:
-Monitoring and Maintenance: Implement continuous monitoring of system performance during its operational phase. Regular maintenance and inspections help identify and address potential issues before they lead to failures.
+### Documentation and Training:
+    1. Comprehensive Documentation: Maintain detailed documentation, including design documents, manuals, and incident reports. Comprehensive documentation aids in understanding the system's 
+       architecture and behaviour.
+    2. Training Programs: Provide training programs for operators and maintenance personnel. Well-trained personnel are better equipped to operate and maintain the system safely.
 
-Incident Reporting and Analysis: Establish a system for reporting and analyzing incidents or failures. Learn from incidents to improve the safety and reliability of the system.
-
-Software and Firmware Updates: Keep software and firmware up-to-date with the latest security patches and improvements. Regular updates can address vulnerabilities and enhance system reliability.
-
-## Documentation and Training:
-Comprehensive Documentation: Maintain detailed documentation, including design documents, manuals, and incident reports. Comprehensive documentation aids in understanding the system's architecture and behaviour.
-
-Training Programs: Provide training programs for operators and maintenance personnel. Well-trained personnel are better equipped to operate and maintain the system safely.
-
-## Continuous Improvement:
-Lessons Learned: Collect and analyze data from incidents and failures to identify lessons learned. Use this information to implement improvements in processes, design, and operations.
-
-Feedback Loop: Establish a feedback loop that allows ongoing input from operators, maintainers, and other stakeholders. This feedback can help identify issues and improvement opportunities.
-
+### Continuous Improvement:
+    Lessons Learned: Collect and analyze data from incidents and failures to identify lessons learned. Use this information to implement improvements in processes, design, and operations.
+    Feedback Loop: Establish a feedback loop that allows ongoing input from operators, maintainers, and other stakeholders. This feedback can help identify issues and improvement 
+    opportunities.
 
 # Process for high-integrity software and systems
- --> Developing high-integrity software and systems involves a systematic and disciplined process to ensure reliability, safety, and adherence to stringent quality standards. Below is a generalized overview
-
- ## Requirements Analysis
-Clearly define and document high-level requirements, considering both functional and non-functional aspects such as safety, security, and reliability.
-
-## Risk Analysis and Management
---> Conduct a comprehensive risk analysis to identify potential threats and vulnerabilities. Develop strategies to mitigate or manage these risks, particularly those related to safety and reliability.
-
-## System Architecture Design
---> Create a robust system architecture that meets the specified requirements. Consider redundancy, fault tolerance, and isolation mechanisms to enhance system integrity.
-
-## Formal Specifications
---> Use formal methods to specify the behaviour and properties of the software and system. Formal specifications provide a precise and unambiguous representation of system requirements.
-
-## Coding Standards and Guidelines
---> Enforce coding standards and guidelines to promote consistency, readability, and maintainability. Follow best practices for high-integrity software development, such as MISRA-C for embedded systems.
-
-## Verification and Validation
---> Implement rigorous verification and validation processes, including static code analysis, dynamic testing, and model checking. Verify that the software meets its specifications and validate its functionality in a real-world environment.
-
-## Safety and Security Assessments
---> Perform safety and security assessments to identify potential vulnerabilities and ensure compliance with relevant safety standards (e.g., ISO 26262 for automotive, DO-178C for aviation).
-
-## Configuration Management:
---> Establish robust configuration management practices to control changes to software artifacts, track versions, and ensure traceability between requirements, design, and implementation.
-
-## Documentation
---> Maintain comprehensive documentation, including design documents, requirements traceability matrices, test plans, and safety cases. Documentation is essential for understanding, maintaining, and auditing high-integrity systems.
-
-## Change Management:
---> Implement a rigorous change management process to assess the impact of proposed changes on system integrity. Changes should be carefully evaluated and validated before implementation.
-
-## Certification and Compliance:
---> Seek certification from relevant regulatory bodies or standards organizations. Ensure compliance with industry-specific standards and regulations governing high-integrity systems.
-
-## Continuous Improvement
---> Establish a culture of continuous improvement. Collect feedback from operational experiences, incidents, and audits to drive improvements in processes, tools, and the overall system.
-
+    --> Developing high-integrity software and systems involves a systematic and disciplined process to ensure reliability, safety, and adherence to stringent quality standards. Below is a 
+        generalized overview
+ ### Requirements Analysis
+     Clearly define and document high-level requirements, considering both functional and non-functional aspects such as safety, security, and reliability.
+### Risk Analysis and Management
+    --> Conduct a comprehensive risk analysis to identify potential threats and vulnerabilities. Develop strategies to mitigate or manage these risks, particularly those related to safety 
+       and reliability.
+### System Architecture Design
+    --> Create a robust system architecture that meets the specified requirements. Consider redundancy, fault tolerance, and isolation mechanisms to enhance system integrity.
+### Formal Specifications
+    --> Use formal methods to specify the behaviour and properties of the software and system. Formal specifications provide a precise and unambiguous representation of system requirements.
+### Coding Standards and Guidelines
+    --> Enforce coding standards and guidelines to promote consistency, readability, and maintainability. Follow best practices for high-integrity software development, such as MISRA-C for 
+        embedded systems.
+### Verification and Validation
+    --> Implement rigorous verification and validation processes, including static code analysis, dynamic testing, and model checking. Verify that the software meets its specifications and 
+         validate its functionality in a real-world environment.
+### Safety and Security Assessments
+    --> Perform safety and security assessments to identify potential vulnerabilities and ensure compliance with relevant safety standards (e.g., ISO 26262 for automotive, DO-178C for 
+        aviation).
+### Configuration Management:
+     --> Establish robust configuration management practices to control changes to software artifacts, track versions, and ensure traceability between requirements, design, and 
+         implementation.
+### Documentation
+    --> Maintain comprehensive documentation, including design documents, requirements traceability matrices, test plans, and safety cases. Documentation is essential for understanding, 
+        maintaining, and auditing high-integrity systems.
+### Change Management:
+    --> Implement a rigorous change management process to assess the impact of proposed changes on system integrity. Changes should be carefully evaluated and validated before implementation.
+### Certification and Compliance:
+    --> Seek certification from relevant regulatory bodies or standards organizations. Ensure compliance with industry-specific standards and regulations governing high-integrity systems.
+### Continuous Improvement
+    --> Establish a culture of continuous improvement. Collect feedback from operational experiences, incidents, and audits to drive improvements in processes, tools, and the overall system.
 
 # Unified process and ICE61508
 
   **Note**
-  1. The Rational Unified Process (RUP) described is a software engineering process
-  2. It provides a disciplined approach to assigning and managing tasks and responsibilities within a development organization.
-  3. Its goal is to ensure the production of high-quality software that meets the needs of its end users within a predictable schedule and budget.
-  4. IEC61508 is accepted as a generic basis for standards in all industrial sectors and is the basis for newer reference literature like [25] [18] [24] within the development of safety- 
-     critical systems.
+      1. The Rational Unified Process (RUP) described is a software engineering process
+      2. It provides a disciplined approach to assigning and managing tasks and responsibilities within a development organization.
+      3. Its goal is to ensure the production of high-quality software that meets the needs of its end users within a predictable schedule and budget.
+      4. IEC61508 is accepted as a generic basis for standards in all industrial sectors and is the basis for newer reference literature like [25] [18] [24] within the development of safety- 
+         critical systems.
 
 ## ICE61508
-  1. IEC61508 is a standard for developing safety-critical software and a framework for developing domain-specific safety standards.
-  2. The standard has an integrated approach to achieve and assess the functional safety of a system and all of its components.
+    1. IEC61508 is a standard for developing safety-critical software and a framework for developing domain-specific safety standards.
+    2. The standard has an integrated approach to achieve and assess the functional safety of a system and all of its components.
 
 The standard of ICE61508 is in 7 different parts but we will focus on 1 to 3
 
 ## Purpose and Scope
   ### primary purpose
-  1. The primary purpose is to provide a ”unified approach” for all safety lifecycle activities that is rational and consistent.
-  2. As such, the standard covers all lifecycle phases for all system components.
-  3. A fundamental premise is the risk-based determination of safety integrity levels (SILs).
+      1. The primary purpose is to provide a ”unified approach” for all safety lifecycle activities that is rational and consistent.
+      2. As such, the standard covers all lifecycle phases for all system components.
+      3. A fundamental premise is the risk-based determination of safety integrity levels (SILs).
 
 ### Secondary purpose 
-  1.  The secondary purpose of IEC61508 is to facilitate the development of industry-specific standards, which have been successfully achieved. EN50128:1997, the MISRA
- Guidelines and the SEMSPLC Guidelines are examples of application-specific standards derived from IEC16508.
+    1. The secondary purpose of IEC61508 is to facilitate the development of industry-specific standards, which have been successfully achieved. EN50128:1997, the MISRA
+         Guidelines and the SEMSPLC Guidelines are examples of application-specific standards derived from IEC16508.
 
 ### Third purpose
- 1. IEC61508 applies to any safety-related software which, as defined by Parts 1 and 2, includes: (a) software that is part of a safety-related system; (b) software that is used to develop a safety-related system; and (c) the operating system, system software, communication software, human-computer interface (HCI) functions, utilities, and software engineering tools used with (a) or (b) above.
+     1. IEC61508 applies to any safety-related software which, as defined by Parts 1 and 2, includes: (a) software that is part of a safety-related system; (b) software that is used to   
+        develop a safety-related system; and (c) the operating system, system software, communication software, human-computer interface (HCI) functions, utilities, and software engineering 
+        tools used with (a) or (b) above.
 
 ## Definitions and concepts in ICE61508
-1.** ”safety”** is defined as freedom from unacceptable risk.
-2. **”risk”** is defined as the combination of the probability of occurrence of harm and the severity of that harm.
-3.** ”harm”** is defined as a physical injury or damage to people's health either directly or indirectly due to damage to property or the environment.
-4. **”A hazard”** is defined as the potential source of harm.
- This implies that to say something about safety, you have to identify hazards and their effects and show how these hazards are handled within the system- or not.
+    1.** ”safety”** is defined as freedom from unacceptable risk.
+    2. **”risk”** is defined as the combination of the probability of occurrence of harm and the severity of that harm.
+    3.** ”harm”** is defined as a physical injury or damage to people's health either directly or indirectly due to damage to property or the environment.
+    4. **”A hazard”** is defined as the potential source of harm.
+     This implies that to say something about safety, you have to identify hazards and their effects and show how these hazards are handled within the system- or not.
 
 ## Safety integrity and functional safety
-1. Safety integrity is like measuring how well a safety system does its job. It's about figuring out the chance that the system will do what it's supposed to do when needed.
-**Example:** If you have a safety system in a car that's meant to deploy the airbags during a crash, safety integrity would measure how likely it is that the airbags will indeed deploy when a crash happens.
+    1. Safety integrity is like measuring how well a safety system does its job. It's about figuring out the chance that the system will do what it's supposed to do when needed.
+    **Example:** If you have a safety system in a car that's meant to deploy the airbags during a crash, safety integrity would measure how likely it is that the airbags will indeed deploy 
+     when a crash happens.
 
-2. Functional safety is all about making sure that a safety system can do the things it's supposed to do to keep things safe. It's about the system's ability to take the right actions to prevent accidents or keep things under control.
-**Example:** Going back to the car example, if there's a safety system that helps the car stay on the road and avoid collisions, functional safety ensures that this system works as intended to maintain a safe driving state.
+    2. Functional safety is all about making sure that a safety system can do the things it's supposed to do to keep things safe. It's about the system's ability to take the right actions to 
+       prevent accidents or keep things under control.
+    **Example:** Going back to the car example, if there's a safety system that helps the car stay on the road and avoid collisions, functional safety ensures that this system works as 
+      intended to maintain a safe driving state.
 
-## Safety lifecycle
- 1. IEC61508 addresses the safety requirements in all lifecycle stages, from concept to decommissioning. The safety lifecycle in Figure 2.1 is a model for identifying the activities
- appropriate to the assessment of safety-related systems.
-![2 1](https://github.com/wasifzaman182/Safety-Critical-Systems/assets/75499379/7ea24923-5054-436a-8012-a2d61a9f79a5)
+### Safety lifecycle
+     1. IEC61508 addresses the safety requirements in all lifecycle stages, from concept to decommissioning. The safety lifecycle in Figure 2.1 is a model for identifying the activities
+     appropriate to the assessment of safety-related systems.
 
-## A risk-based approach
-1. A risk-based approach is about being super careful, thinking ahead about what could go wrong, making smart choices to make things safer, proving that it works, and being responsible for those decisions.
+### A risk-based approach
+    1. A risk-based approach is about being super careful, thinking ahead about what could go wrong, making smart choices to make things safer, proving that it works, and being responsible 
+       for those decisions.
 
 ## ALARP
  ### Tolerable Risk:
-1. Tolerable risk means finding a level of risk that we can live with or accept. It's about deciding how much risk is okay, considering the possible consequences of accidents.
-**Example:** Imagine you're building a playground. You want it to be fun but safe. Tolerable risk is like deciding on a level of excitement (risk) that kids can enjoy without getting seriously hurt.
+    1. Tolerable risk means finding a level of risk that we can live with or accept. It's about deciding how much risk is okay, considering the possible consequences of accidents.
+    **Example:** Imagine you're building a playground. You want it to be fun but safe. Tolerable risk is like deciding on a level of excitement (risk) that kids can enjoy without getting 
+      seriously hurt.
 
 ### ALARP (As Low As Reasonably Practicable):
-1. ALARP is about making risks as low as possible without going to extreme measures. It recognizes that, in some situations, it's not realistic to aim for zero risk, but we should do everything reasonable to make things safe. [^]
-**Example**: Think of driving a car. You want to reduce the risk of accidents as much as possible (ALARP), but you also understand that you can't eliminate all risk. So, you wear a seatbelt and follow traffic rules to make it as safe as reasonably possible.
+    1. ALARP is about making risks as low as possible without going to extreme measures. It recognizes that, in some situations, it's not realistic to aim for zero risk, but we should do 
+      everything reasonable to make things safe. [^]
+    **Example**: Think of driving a car. You want to reduce the risk of accidents as much as possible (ALARP), but you also understand that you can't eliminate all risk. So, you wear a 
+      seatbelt and follow traffic rules to make it as safe as reasonably possible.
 
 ### Determining Acceptable Risk:
-1. In Simple Words: Deciding what level of risk is acceptable is like weighing the benefits and efforts. If the benefits are huge, we might accept a bit more risk. If reducing risk requires a lot of effort and the benefits are small, we might accept a bit more risk too.
-**Example:** When deciding safety measures for a new technology, like a smartphone, you consider how much people will benefit from it and how hard it would be to make it completely risk-free.
-![2 2](https://github.com/wasifzaman182/Safety-Critical-Systems/assets/75499379/da4315c6-c25e-4a9a-8d21-f6692b410940)
-
+    1. In Simple Words: Deciding what level of risk is acceptable is like weighing the benefits and efforts. If the benefits are huge, we might accept a bit more risk. If reducing risk 
+       requires a lot of effort and the benefits are small, we might accept a bit more risk too.
+    **Example:** When deciding safety measures for a new technology, like a smartphone, you consider how much people will benefit from it and how hard it would be to make it completely risk- 
+      free.
 
 ## Safety Integrity Levels (SILs) 
   ### SIL Represents:
-  SIL is like a safety target that helps make systems more reliable. It doesn't measure risk directly
+     SIL is like a safety target that helps make systems more reliable. It doesn't measure risk directly
 
   ### Safety Management:
-  SIL guides how seriously we take safety in the development process. The higher the SIL, the more rigorous the safety measures we use
+     SIL guides how seriously we take safety in the development process. The higher the SIL, the more rigorous the safety measures we use
 
   ### Absolute Safety:
-  Just because we reach a certain SIL doesn't mean the system is entirely safe. It gives us confidence but not a guarantee
+    Just because we reach a certain SIL doesn't mean the system is entirely safe. It gives us confidence but not a guarantee
 
   ### Risk Management:
-  Steps like analyzing software risks, determining SIL, setting safety requirements, and controlling risks are all part of the process. Assessing remaining risks helps fine-tune safety measures.
+    Steps like analyzing software risks, determining SIL, setting safety requirements, and controlling risks are all part of the process. Assessing remaining risks helps fine-tune safety 
+    measures.
 
   ### Controlling Factors for Safety:
-  IEC 61508 focuses on controlling factors like engineering techniques, software design, and quality assurance methods. These factors are matched to the required SIL level.
+    IEC 61508 focuses on controlling factors like engineering techniques, software design, and quality assurance methods. These factors are matched to the required SIL level.
 
 ## Confidence of safety
   ### Plan Safety in Advance:
-  Instead of assuming something is safe if it functions correctly, IEC 61508 advises planning for safety and confidence from the start.
+    Instead of assuming something is safe if it functions correctly, IEC 61508 advises planning for safety and confidence from the start.
 
  ### Independent Safety Requirements:
- Safety requirements should be separate from functional ones, stating clearly when and how they'll be met.
+    Safety requirements should be separate from functional ones, stating clearly when and how they'll be met.
 
  ### Independent Validation:
- Safety requirements must be independently validated to ensure they work as intended.
+    Safety requirements must be independently validated to ensure they work as intended.
 
  ### Avoiding Assumptions:
- Don't assume correct functionality guarantees safety. Validate safety independently and use external assessments for added confidence.
+    Don't assume correct functionality guarantees safety. Validate safety independently and use external assessments for added confidence.
 
 ## Compliance
  ### "Shall" Indicates Strict Compliance:
- When a requirement uses "shall," it means it must be strictly followed to claim conformity with the standard.
+    When a requirement uses "shall," it means it must be strictly followed to claim conformity with the standard.
 
  ### "Should" or "Recommended" Allows Flexibility:
- "Should" or "recommended" suggests a preferred course of action but doesn't exclude other possibilities. It's a suggestion, not a strict requirement. 
+    "Should" or "recommended" suggests a preferred course of action but doesn't exclude other possibilities. It's a suggestion, not a strict requirement. 
 
 ### Normative Elements Define Requirements:
-Normative elements outline provisions necessary for claiming compliance. They often contain both "shall" and "should.
+    Normative elements outline provisions necessary for claiming compliance. They often contain both "shall" and "should.
 
 ### IEC 61508 Normative Elements:
-Parts 1, 2, 3, and 4 contain normative elements, setting out requirements for compliance. Parts 5, 6, and 7 don't have normative requirements.
+    Parts 1, 2, 3, and 4 contain normative elements, setting out requirements for compliance. Parts 5, 6, and 7 don't have normative requirements.
 
 ### Informative Elements Provide Additional Info:
-Informative elements offer extra insights but aren't mandatory for claiming compliance. Text in informative elements doesn't include "shall."
+    Informative elements offer extra insights but aren't mandatory for claiming compliance. Text in informative elements doesn't include "shall."
 # To be continued.............. page-no 21, topic 2.6 use of standard 
 
 
 # Quantifying project and process management
-  --> involves measuring, analyzing, and assessing various aspects to ensure efficiency, effectiveness, and successful outcomes. Below are some of them.
+    --> involves measuring, analyzing, and assessing various aspects to ensure efficiency, effectiveness, and successful outcomes. Below are some of them.
 
   ## Timeline and Milestones:
    ### Metrics:
-   Project duration (start to finish).
-   Milestone completion dates.
-  
+     Project duration (start to finish).
+     Milestone completion dates.
+    
   ### Quantification:
-  Calculate project duration against the planned timeline.
-  Measure the variance between planned and actual milestone completion dates.
+    Calculate project duration against the planned timeline.
+    Measure the variance between planned and actual milestone completion dates.
 
 ## Resource Utilization:
   ### Metrics:
-  Work hours allocated.
-  Actual work hours spent.
+    Work hours allocated.
+    Actual work hours spent.
 
  ### Quantification:
- Compare planned vs. actual work hours.
- Calculate resource utilization rate.
+     Compare planned vs. actual work hours.
+     Calculate resource utilization rate.
 
 ## Cost Management:
  ### Metrics:
-  Budget allocation.
-  Actual project costs.
+    Budget allocation.
+    Actual project costs.
 
 ### Quantification:
-  Measure cost performance against the budget.
-  Analyze cost variances.
+    Measure cost performance against the budget.
+    Analyze cost variances.
 
 ## Task and Activity Completion:
  ### Metrics:
-  Planned vs. completed tasks.
-  Task completion times.
+    Planned vs. completed tasks.
+    Task completion times.
 
  ### Quantification:
-  Calculate task completion rates.
-  Evaluate the time taken for task completion.
+    Calculate task completion rates.
+    Evaluate the time taken for task completion.
 
 ## Quality Metrics:
  ### Metrics:
-  Defect rates.
-  Customer satisfaction scores.
+    Defect rates.
+    Customer satisfaction scores.
 
  ### Quantification:
-  Quantify the number of defects per unit.
-  Analyze customer feedback and satisfaction scores.
+    Quantify the number of defects per unit.
+    Analyze customer feedback and satisfaction scores.
 
 ## Risk Management:
  ### Metrics:
-  The number of identified risks.
-  Risk mitigation effectiveness.
+    The number of identified risks.
+    Risk mitigation effectiveness.
  ### Quantification:
-  Quantify the impact and likelihood of identified risks.
-  Measure the success of risk mitigation strategies.
+    Quantify the impact and likelihood of identified risks.
+    Measure the success of risk mitigation strategies.
 
 ## Communication Effectiveness:
  ### Metrics:
-  Response time to emails and messages.
-  Team collaboration metrics.
+    Response time to emails and messages.
+    Team collaboration metrics.
 
 ### Quantification:
-  Quantify response times.
-  Evaluate team collaboration through measurable indicators.
+    Quantify response times.
+    Evaluate team collaboration through measurable indicators.
 
 ## Process Efficiency:
   ### Metrics:
-  Process cycle time.
-  Process improvement metrics.
+    Process cycle time.
+    Process improvement metrics.
 
 ### Quantification:
-  Measure the time taken to complete a process cycle.
-  Quantify improvements achieved through process changes.
+    Measure the time taken to complete a process cycle.
+    Quantify improvements achieved through process changes.
 
 ## Customer and Stakeholder Engagement:
   ### Metrics:
-  Customer/stakeholder feedback.
-  Engagement metrics.
+    Customer/stakeholder feedback.
+    Engagement metrics.
 
 ### Quantification:
-  Quantify positive and negative feedback.
-  Evaluate stakeholder engagement through measurable criteria.
+    Quantify positive and negative feedback.
+    Evaluate stakeholder engagement through measurable criteria.
 
 ## Project Performance Indices:
   ### Metrics:
-  Earned Value (EV).
-  Schedule Performance Index (SPI) and Cost Performance Index (CPI).
+    Earned Value (EV).
+    Schedule Performance Index (SPI) and Cost Performance Index (CPI).
 
 ### Quantification:
-  Calculate EV and compare it with the planned value.
-  Assess SPI and CPI to measure schedule and cost performance.
+    Calculate EV and compare it with the planned value.
+    Assess SPI and CPI to measure schedule and cost performance.
 
 
 # Quantification of the development process
- --> Quantifying the development process is crucial for assessing efficiency, identifying improvement areas, and ensuring successful outcomes. Here are key aspects
+     --> Quantifying the development process is crucial for assessing efficiency, identifying improvement areas, and ensuring successful outcomes. Here are key aspects
 
   ## Code Metrics:
    ### Metrics:
-  Lines of code (LOC).
-  Cyclomatic complexity.
-  Code duplication.
+    Lines of code (LOC).
+    Cyclomatic complexity.
+    Code duplication.
 
   ### Quantification:
-  Measure the size and complexity of the codebase.
-  Identify and quantify duplicated code.
+    Measure the size and complexity of the codebase.
+    Identify and quantify duplicated code.
 
 ## Velocity and Burndown Charts:
   ### Metrics:
-  Story points are completed per iteration.
-  Remaining work over time.
+    Story points are completed per iteration.
+    Remaining work over time.
 
 ### Quantification:
-  Calculate the velocity based on completed story points.
-  Monitor progress and remaining work through burndown charts.
+    Calculate the velocity based on completed story points.
+    Monitor progress and remaining work through burndown charts.
 
 ## Defect Density:
  ### Metrics:
-  Number of defects.
-  Code churn (changes to code).
+    Number of defects.
+    Code churn (changes to code).
 
   ### Quantification:
-  Calculate defects per line of code.
-  Assess the impact of code changes on defect density.
+    Calculate defects per line of code.
+    Assess the impact of code changes on defect density.
 
 ## Code Review Metrics:
   ### Metrics:
-  Time spent on code reviews.
-  Number of comments per review.
+    Time spent on code reviews.
+    Number of comments per review.
 
  ### Quantification:
-  Measure the efficiency of code review processes.
-  Quantify the feedback and discussion generated during reviews.
+    Measure the efficiency of code review processes.
+    Quantify the feedback and discussion generated during reviews.
 
 ### Testing Metrics:
   ### Metrics:
-  Test coverage.
-  Number of test cases executed.
+    Test coverage.
+    Number of test cases executed.
 
  ### Quantification:
-  Quantify the percentage of code covered by tests.
-  Measure the number of test cases executed.
+    Quantify the percentage of code covered by tests.
+    Measure the number of test cases executed.
 
 ## Deployment Frequency:
   ### Metrics:
-  Number of deployments.
-  Deployment frequency over time.
+    Number of deployments.
+    Deployment frequency over time.
 
 ### Quantification:
-  Quantify how often deployments occur.
-  Monitor changes in deployment frequency.
+    Quantify how often deployments occur.
+    Monitor changes in deployment frequency.
 
 ## Lead Time and Cycle Time:
  ### Metrics:
-  Lead time (time from idea to deployment).
-  Cycle time (time from code commit to deployment).
+    Lead time (time from idea to deployment).
+    Cycle time (time from code commit to deployment).
 
  ### Quantification:
-  Measure the duration of key development phases.
-  Evaluate efficiency in moving from idea to deployment.
+    Measure the duration of key development phases.
+    Evaluate efficiency in moving from idea to deployment.
 
 ## Customer Satisfaction Surveys:
   ### Metrics:
-  Net Promoter Score (NPS).
-  Customer feedback ratings.
+    Net Promoter Score (NPS).
+    Customer feedback ratings.
 
   ### Quantification:
-  Quantify customer satisfaction through NPS and ratings.
-  Analyze feedback to identify improvement areas.
+    Quantify customer satisfaction through NPS and ratings.
+    Analyze feedback to identify improvement areas.
 
 ## Agile Metrics:
   ### Metrics:
-  Sprint burndown charts.
-  Release burnup charts.
+    Sprint burndown charts.
+    Release burnup charts.
 
 ### Quantification:
-  Monitor progress within sprints using burndown charts.
-  Track overall project progress with burnup charts.
+    Monitor progress within sprints using burndown charts.
+    Track overall project progress with burnup charts.
 
 ## Continuous Integration Metrics:
  ### Metrics:
-  Build success rate.
-  Build duration.
+    Build success rate.
+    Build duration.
 
 ### Quantification:
-  Quantify the percentage of successful builds.
-  Measure the time taken for each build.
+    Quantify the percentage of successful builds.
+    Measure the time taken for each build.
 
 # Stages in process control
-  ## Data Safety:
-   1. Software-generated data is used for safety-critical decisions.
-   2. Emphasis on the importance of data integrity in safety-critical systems.
-   3. Software is used in design analysis, and safety-critical data is stored in databases.
+  ### Data Safety:
+     1. Software-generated data is used for safety-critical decisions.
+     2. Emphasis on the importance of data integrity in safety-critical systems.
+     3. Software is used in design analysis, and safety-critical data is stored in databases.
 
-  ## Abstraction from Physical Design:
-   1. Software engineers are involved in system design.
-   2. Common errors in operational software are often related to requirements.
-   3. Completeness in requirements is highlighted as a particular challenge.
-   4. Software failure modes differ from hardware, and software usually does what it is instructed to do.
+  ### Abstraction from Physical Design:
+     1. Software engineers are involved in system design.
+     2. Common errors in operational software are often related to requirements.
+     3. Completeness in requirements is highlighted as a particular challenge.
+     4. Software failure modes differ from hardware, and software usually does what it is instructed to do.
 
-  ## Safety vs. Reliability:
-   1. Safety and reliability require different development approaches.
-   2. Reliability, historically emphasized in hardware design, may not be sufficient for safety.
-   3. Examples from FAA reports highlight the need for ultra-high reliability in safety-critical systems.
+  ### Safety vs. Reliability:
+     1. Safety and reliability require different development approaches.
+     2. Reliability, historically emphasized in hardware design, may not be sufficient for safety.
+     3. Examples from FAA reports highlight the need for ultra-high reliability in safety-critical systems.
 
-  ## Software Safety Basics:
-   1. The challenge is determining how safe is "safe enough" without over- or under-designing a system.
-   2. Thresholds must be established based on risk-based assessments and hazard analyses.
-   3. Differentiates between demand mode (periodic or on-demand use) and continuous mode (continuous operation for an intended task).
-      
-      ### Demand Mode
+  ### Software Safety Basics:
+     1. The challenge is determining how safe is "safe enough" without over- or under-designing a system.
+     2. Thresholds must be established based on risk-based assessments and hazard analyses.
+     3. Differentiates between demand mode (periodic or on-demand use) and continuous mode (continuous operation for an intended task).
+        
+   #### Demand Mode
         **Usage Pattern**: In demand mode, the system is used periodically or on demand.
         **Operational Characteristics**: The system operates intermittently based on specific needs or requests.
         **Examples**: A system might be activated or used when a certain condition occurs or when a user requests it. For example, an emergency response
                       system that is activated when an emergency button is pressed.
-      ### Continuous Mode:
+  #### Continuous Mode:
         **Usage Pattern:** In continuous mode, the system operates continuously for an intended task.
         **Operational Characteristics**: The system is designed to operate continuously without significant interruptions.
          **Examples:** Systems that are required to provide continuous monitoring or control, such as a safety-critical process control system in a
                        manufacturing plant or a continuous monitoring system for environmental conditions.
       
-  ## Software Reliability Basics:
-   1. Defines software reliability as a measure of confidence that software produces accurate, consistent, and repeatable results.
-   2. Considerations under various operational loads and in the intended environment.
+  ### Software Reliability Basics:
+     1. Defines software reliability as a measure of confidence that software produces accurate, consistent, and repeatable results.
+     2. Considerations under various operational loads and in the intended environment.
 
-  ## The Problem to be Solved:
-   1. Identifies the lack of appropriate constraints on design as the primary safety problem in computer-based systems.
-   2. The role of the system safety engineer is to identify and enforce design constraints necessary for safety.
+  ### The Problem to be Solved:
+     1. Identifies the lack of appropriate constraints on design as the primary safety problem in computer-based systems.
+     2. The role of the system safety engineer is to identify and enforce design constraints necessary for safety.
 
-  ## Most Common Software Errors:
-   1. Highlights that most safety-related software errors can be traced back to requirements rather than coding errors.
-   2. Understanding the software process is crucial for the development of safety-critical software-intensive systems.
+  ### Most Common Software Errors:
+     1. Highlights that most safety-related software errors can be traced back to requirements rather than coding errors.
+     2. Understanding the software process is crucial for the development of safety-critical software-intensive systems.
 
 # ACM/IEEE Code of Ethics (The Role of the Software and Systems Engineer)
-  ## Public: 
-  1. Software engineers shall act consistently in the public interest.
+  ### Public: 
+    1. Software engineers shall act consistently in the public interest.
      
- ## Client And Employer: 
-  1. Software engineers shall act in a manner that is in the best interests of their client and employer consistent with the public interest.
+ ### Client And Employer: 
+    1. Software engineers shall act in a manner that is in the best interests of their client and employer consistent with the public interest.
  
- ## Product: 
- 1. Software engineers shall ensure that their products and related modifications meet the highest professional standards possible.
+ ### Product: 
+    1. Software engineers shall ensure that their products and related modifications meet the highest professional standards possible.
  
- ## Judgment: 
-  1. Software engineers shall maintain integrity and independence in their professional judgment.
+ ### Judgment: 
+    1. Software engineers shall maintain integrity and independence in their professional judgment.
 
- ## Management: 
-  1. Software engineering managers and leaders shall subscribe to and promote an ethical approach to the management of software development and maintenance.
+ ### Management: 
+    1. Software engineering managers and leaders shall subscribe to and promote an ethical approach to the management of software development and maintenance.
  
- ## Profession: 
+ ### Profession: 
     1. Software engineers shall advance the integrity and reputation of the profession consistent with the public interest.
 
- ## Colleagues: 
+ ### Colleagues: 
     1. Software engineers shall be fair to and supportive of their colleagues.
  
- ## Self: 
+ ### Self: 
     1. Software engineers shall participate in lifelong learning regarding the practice of their profession and shall promote an ethical approach to the practice of 
      the profession.
 
 
 # Capability Maturity Model Integration (CMMI)
 
-  ## Objective: 
+  ### Objective: 
    To provide a structured view of process improvement across an organization.
 
-  ## Types of Representations:
-   ### Staged View: 
+  ### Types of Representations:
+   #### Staged View: 
     1.  Follows a predefined and proven path with case study and ROI data. Emphasizes organizational improvement, and overall results are summarized in maturity levels.
-  ### Continuous View: 
+  #### Continuous View: 
     1.  Offers maximum flexibility for the order of process improvement. It focuses on improvement within process areas, and improvement can occur at different rates.
 
-## +SAFE Extension:
-  ### Purpose: 
+### +SAFE Extension:
+  #### Purpose: 
     An extension to the continuous representation of CMMI for Development with a focus on safety-critical systems (SCS).
    
-  ### Added Process Areas:
-   ### Safety Management: 
+  #### Added Process Areas:
+   #### Safety Management: 
     Includes goals for developing safety plans, monitoring safety incidents, and managing safety-related suppliers.
-   ### Safety Engineering: 
-    Involves goals related to identifying hazards, analyzing hazards and performing risk assessments, defining and maintaining safety requirements, designing for safety, and supporting safety acceptance.
+   #### Safety Engineering: 
+    Involves goals related to identifying hazards, analyzing hazards and performing risk assessments, defining and maintaining safety requirements, designing for safety, and supporting 
+    safety acceptance.
 
 ## Key Points:
-  ### Maturity Levels:
+  #### Maturity Levels:
     Both representations (Continuous and Staged) share common discriminators regarding maturity levels.
- ### Integration: 
+ #### Integration: 
     CMMI can help integrate traditionally separate organizations, set process improvement goals, guide quality processes, and serve as a yardstick for appraising current practices.
 
-## Benefits of +SAFE Extension:
+### Benefits of +SAFE Extension:
     1. Identifies safety strengths and weaknesses early in the acquisition process.
     2. Explicitly addresses safety capabilities for product and service suppliers.
 
-## Comparison:
+### Comparison:
     1. Continuous vs. Staged: While the continuous representation offers flexibility in the order of improvement and focuses on process areas, the staged representation follows a predefined path, emphasizing organizational improvement with results summarized in maturity levels.
 
 
@@ -617,59 +630,59 @@ Informative elements offer extra insights but aren't mandatory for claiming comp
     1. Understanding what the software should do and the constraints under which it must operate.
     2. Specifying, and validating requirements, and managing them throughout the lifecycle of the project.
   
-   ### Software Design: 
+   #### Software Design: 
     1. Defining the architecture, components, interfaces, and other characteristics of a system or component. 
     2. Creating a plan that describes the structure and behaviour of the software, ensuring it meets the specified requirements. 
     3. Key aspects include architectural styles, design patterns, and user interface design.
     
-   ### Software Construction: 
+   #### Software Construction: 
     1. Programming phase, where developers translate design into source code. 
     2. This phase requires a deep understanding of programming languages and development tools.
   
-   ### Software Testing: 
+   #### Software Testing: 
     1. It includes test planning, design, execution, and evaluation. 
     2. The aim is to ensure that the software meets its requirements and is free of defects.
        
-   ### Software Maintenance: 
+   #### Software Maintenance: 
     1. Correcting defects, improving performance or other attributes, and adapting to a changed environment.
     2. Maintenance is an ongoing activity and often requires more resources than the initial development.
        
-   ### Software Configuration Management: 
+   #### Software Configuration Management: 
     1. Involves identifying and organizing the configuration of software (source code, documentation, etc).
     2. Controlling changes and maintaining integrity and traceability throughout the software life cycle.
   
-   ### Software Engineering Management: 
+   #### Software Engineering Management: 
     1. Planning, coordinating, measuring, monitoring, controlling, and reporting software projects.
     2. Understanding project management principles, including risk management, planning, scheduling, resource allocation, and leadership.
   
-   ### Software Engineering Process:
+   #### Software Engineering Process:
     1. Involves understanding software life cycle models, methodologies, process assessment and improvement, and project management.
        
-   ### Software Engineering Models and Methods: 
+   #### Software Engineering Models and Methods: 
      1. Encompasses various models and methods used in software engineering.
      2. Includes traditional and agile methodologies, modelling languages, and the design and analysis of algorithms.
   
-   ### Software Quality: 
+   #### Software Quality: 
     1. Ensuring that software meets the required level of quality.
     2. Software quality is closely linked to software testing but has a broader focus, including the process and the product.
   
-  ### Software Engineering Professional Practice
+  #### Software Engineering Professional Practice
     1. Ethical, legal, and professional responsibilities of software engineers.
     2. Understanding codes of ethics, professional conduct, team dynamics, and effective communication within a software development team.
   
-  ### Software Engineering Economics
+  #### Software Engineering Economics
     1. Understanding the financial and economic aspects of software engineering, such as cost estimation, cost-benefit analysis, and budgeting.
     2. Crucial for decision-making and assessing the viability of projects.
   
-  ### Computing Foundations
+  #### Computing Foundations
     1. This chapter provides a foundation in computer science that supports software engineering. 
     2. Topics include algorithms, data structures, programming languages, and the theory of computation.
        
-  ### Mathematical Foundations
+  #### Mathematical Foundations
     1. This includes the mathematical concepts necessary for software engineering, such as logic, sets, functions, algebra, and probability. 
     2. These concepts are fundamental in algorithm design and systems modeling.
   
-  ### Engineering Foundations
+  #### Engineering Foundations
     1. This covers the basic principles of engineering that are relevant to software engineering. 
     2. It includes topics like system engineering, control theory, and the application of scientific methods to software development.
     

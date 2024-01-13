@@ -742,3 +742,56 @@ The standard of ICE61508 is in 7 different parts but we will focus on 1 to 3
      In conclusion, software requirements analysis is a crucial process in the development of software systems. Understanding the dimensions of requirements, modeling notations, 
      architectural design, requirements negotiation, and formal analysis are essential for successful project outcomes. The careful classification, modeling, and negotiation of requirements  
      are key to delivering effective software solutions that meet the needs of stakeholders and users.
+
+# V-Model – Software Engineering
+    1. It executes in a sequential manner in a V-shape. 
+    2. It is also known as the Verification and Validation model. 
+    3. The development of each step is directly associated with the testing phase. 
+    4. The next phase starts only after completion of the previous phase i.e., for each development activity, there is a testing activity corresponding to it.
+    
+  ## V-Model Design:
+   #### Requirements Gathering and Analysis: 
+     The first phase of the V-Model is the requirements gathering and analysis phase, where the customer’s requirements for the software are gathered and analyzed to determine the scope of 
+     the project.
+  #### Design: 
+    In the design phase, the software architecture and design are developed, including the high-level design and detailed design.
+  #### Implementation:
+     In the implementation phase, the software is actually built based on the design.
+  #### Testing: 
+     In the testing phase, the software is tested to ensure that it meets the customer’s requirements and is of high quality.
+ #### Deployment:
+    In the deployment phase, the software is deployed and put into use.
+ #### Maintenance:
+    In the maintenance phase, the software is maintained to ensure that it continues to meet the customer’s needs and expectations.
+  **Note**
+            The V-Model is often used in safety: critical systems, such as aerospace and defence systems, because of its emphasis on thorough testing and its ability to clearly define the 
+             steps involved in the software development process.
+ ![Vmodel](https://github.com/wasifzaman182/Safety-Critical-Systems/assets/75499379/3a0c6e3e-10f9-4428-9fcb-d43ff4812e1f)
+
+ ## Different phases in a V-Model 
+   ### Verification Phases:
+       It involves static analysis technique (review) done without executing code. It is the process of evaluation of the product development phase to find whether specified requirements            meet.
+ There are several Varification phases in the V-Model:
+
+   #### Business Requirement Analysis
+        1. Initiates the development cycle by aligning product requirements with customer perspectives.
+        2. Crucial for understanding and communicating with customers to clarify their needs.
+        3. Acceptance test design planning is done during this phase for future acceptance testing.
+   #### System Design:
+       1. Begins after clear understanding of product requirements.
+       2. Enables comprehensive system design, beneficial for future test case execution.
+   #### Architectural Design (High-Level Design - HLD):
+       1. Specifies and comprehends architectural specifications.
+       2. Technical approaches are evaluated for both technical and financial viability.
+       3. Defines system architecture, modules, and communication between them.
+       4. Integration tests can be developed during this phase.
+  #### Module Design (Low-Level Design - LLD):
+       1. Specifies detailed internal design for each system module.
+       2. Ensures compatibility with other modules and external systems in the architecture.
+       3. Unit tests are created based on internal module designs.
+  #### Coding Phase:
+       1. Involves writing code for system modules based on design specifications.
+       2. Follows coding standards and principles.
+       3. Code undergoes reviews and optimizations before final build integration.
+       
+### Validation Phases:

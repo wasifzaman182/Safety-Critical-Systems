@@ -795,3 +795,53 @@ The standard of ICE61508 is in 7 different parts but we will focus on 1 to 3
        3. Code undergoes reviews and optimizations before final build integration.
        
 ### Validation Phases:
+   #### Unit Testing:
+        1. Unit Test Plans are developed during module design.
+        2. Executed to eliminate bugs at the code or unit level.
+  #### Integration Testing:
+        1. Conducted after unit testing.
+        2. Modules are integrated, and system communication is tested.
+        3. Validates module interactions based on the architectural design.
+  #### System Testing:
+        1. Tests the complete application for functionality, interdependency, and communication.
+        2. Validates both functional and non-functional requirements.
+  #### User Acceptance Testing (UAT):
+        1. Performed in a user environment resembling the production environment.
+        2. Ensures the delivered system meets user requirements and is ready for real-world use.
+
+### Principles of V-Model
+  #### Large to Small:
+        1. Testing is performed in a hierarchical perspective, progressing from project requirements to High-Level Design and Detailed Design phases.
+        2. Requirements become more refined and detailed as each phase is completed.
+ #### Data/Process Integrity:
+        1. Successful design requires the incorporation and cohesion of both data and processes.
+        2. Process elements must be identified at each requirement.
+ #### Scalability:
+        1. V-Model is flexible and can accommodate IT projects of varying sizes, complexities, and durations.
+ #### Cross Referencing:
+        1. Direct correlation between requirements and corresponding testing activities is established.
+### When to use? 
+        1. Where requirements are clearly defined and fixed.
+        2. The V-Model is used when ample technical resources are available with technical expertise.
+        3. Small to medium-sized projects with set and clearly specified needs are recommended to use the V-shaped model.
+        4. Since it is challenging to keep stable needs in large projects, the project should be small.
+
+### Advantages: 
+        1. This is a highly disciplined model and Phases are completed one at a time.
+        2. V-Model is used for small projects where project requirements are clear.
+        3. Simple and easy to understand and use.
+        4. This model focuses on verification and validation activities early in the life cycle thereby enhancing the probability of building an error-free and good quality product.
+        5. It enables project management to track progress accurately.
+        6. Clear and Structured Process: The V-Model provides a clear and structured process for software development, making it easier to understand and follow.
+        7. Emphasis on Testing: The V-Model places a strong emphasis on testing, which helps to ensure the quality and reliability of the software.
+        8. Improved Traceability: The V-Model provides a clear link between the requirements and the final product, making it easier to trace and manage changes to the software.
+        9. Better Communication: The clear structure of the V-Model helps to improve communication between the customer and the development team.
+### Disadvantages: 
+        1. High risk and uncertainty.
+        2. It is not a good for complex and object-oriented projects.
+        3. It is not suitable for projects where requirements are not clear and contains high risk of changing.
+        4. This model does not support iteration of phases.
+        5. It does not easily handle concurrent events.
+        6. Inflexibility: The V-Model is a linear and sequential model, which can make it difficult to adapt to changing requirements or unexpected events.
+        7. Time-Consuming: The V-Model can be time-consuming, as it requires a lot of documentation and testing.
+        8. Overreliance on Documentation: The V-Model places a strong emphasis on documentation, which can lead to an overreliance on documentation at the expense of actual development work.

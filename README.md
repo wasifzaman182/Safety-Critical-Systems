@@ -261,7 +261,7 @@ The standard of ICE61508 is in 7 different parts but we will focus on 1 to 3
 ### A risk-based approach
     1. A risk-based approach is about being super careful, thinking ahead about what could go wrong, making smart choices to make things safer, proving that it works, and being responsible 
        for those decisions.
-       ![2 1](https://github.com/wasifzaman182/Safety-Critical-Systems/assets/75499379/7ea24923-5054-436a-8012-a2d61a9f79a5)
+![2 1](https://github.com/wasifzaman182/Safety-Critical-Systems/assets/75499379/7ea24923-5054-436a-8012-a2d61a9f79a5)
 
 ## ALARP
  ### Tolerable Risk:
@@ -280,7 +280,7 @@ The standard of ICE61508 is in 7 different parts but we will focus on 1 to 3
        requires a lot of effort and the benefits are small, we might accept a bit more risk too.
     **Example:** When deciding safety measures for a new technology, like a smartphone, you consider how much people will benefit from it and how hard it would be to make it completely risk- 
       free.
-      ![2 2](https://github.com/wasifzaman182/Safety-Critical-Systems/assets/75499379/da4315c6-c25e-4a9a-8d21-f6692b410940)
+![2 2](https://github.com/wasifzaman182/Safety-Critical-Systems/assets/75499379/da4315c6-c25e-4a9a-8d21-f6692b410940)
 
 ## Safety Integrity Levels (SILs) 
   ### SIL Represents:

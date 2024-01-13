@@ -565,13 +565,13 @@ Informative elements offer extra insights but aren't mandatory for claiming comp
   1. Software engineering managers and leaders shall subscribe to and promote an ethical approach to the management of software development and maintenance.
  
  ## Profession: 
-  1. Software engineers shall advance the integrity and reputation of the profession consistent with the public interest.
+    1. Software engineers shall advance the integrity and reputation of the profession consistent with the public interest.
 
  ## Colleagues: 
-  1. Software engineers shall be fair to and supportive of their colleagues.
+    1. Software engineers shall be fair to and supportive of their colleagues.
  
  ## Self: 
-  1. Software engineers shall participate in lifelong learning regarding the practice of their profession and shall promote an ethical approach to the practice of 
+    1. Software engineers shall participate in lifelong learning regarding the practice of their profession and shall promote an ethical approach to the practice of 
      the profession.
 
 
@@ -582,38 +582,38 @@ Informative elements offer extra insights but aren't mandatory for claiming comp
 
   ## Types of Representations:
    ### Staged View: 
-   1.  Follows a predefined and proven path with case study and ROI data. Emphasizes organizational improvement, and overall results are summarized in maturity levels.
+    1.  Follows a predefined and proven path with case study and ROI data. Emphasizes organizational improvement, and overall results are summarized in maturity levels.
   ### Continuous View: 
-   1.  Offers maximum flexibility for the order of process improvement. It focuses on improvement within process areas, and improvement can occur at different rates.
+    1.  Offers maximum flexibility for the order of process improvement. It focuses on improvement within process areas, and improvement can occur at different rates.
 
 ## +SAFE Extension:
   ### Purpose: 
-   An extension to the continuous representation of CMMI for Development with a focus on safety-critical systems (SCS).
+    An extension to the continuous representation of CMMI for Development with a focus on safety-critical systems (SCS).
    
   ### Added Process Areas:
    ### Safety Management: 
-   Includes goals for developing safety plans, monitoring safety incidents, and managing safety-related suppliers.
- ### Safety Engineering: 
-  Involves goals related to identifying hazards, analyzing hazards and performing risk assessments, defining and maintaining safety requirements, designing for safety, and supporting safety acceptance.
+    Includes goals for developing safety plans, monitoring safety incidents, and managing safety-related suppliers.
+   ### Safety Engineering: 
+    Involves goals related to identifying hazards, analyzing hazards and performing risk assessments, defining and maintaining safety requirements, designing for safety, and supporting safety acceptance.
 
 ## Key Points:
   ### Maturity Levels:
-   Both representations (Continuous and Staged) share common discriminators regarding maturity levels.
+    Both representations (Continuous and Staged) share common discriminators regarding maturity levels.
  ### Integration: 
-  CMMI can help integrate traditionally separate organizations, set process improvement goals, guide quality processes, and serve as a yardstick for appraising current practices.
+    CMMI can help integrate traditionally separate organizations, set process improvement goals, guide quality processes, and serve as a yardstick for appraising current practices.
 
 ## Benefits of +SAFE Extension:
-  1. Identifies safety strengths and weaknesses early in the acquisition process.
-  2. Explicitly addresses safety capabilities for product and service suppliers.
+    1. Identifies safety strengths and weaknesses early in the acquisition process.
+    2. Explicitly addresses safety capabilities for product and service suppliers.
 
 ## Comparison:
-  1. Continuous vs. Staged: While the continuous representation offers flexibility in the order of improvement and focuses on process areas, the staged representation follows a predefined path, emphasizing organizational improvement with results summarized in maturity levels.
+    1. Continuous vs. Staged: While the continuous representation offers flexibility in the order of improvement and focuses on process areas, the staged representation follows a predefined path, emphasizing organizational improvement with results summarized in maturity levels.
 
 
 # Software Engineering Body of Knowledge (SWEBOK)
-  SWEBOK describes the generally accepted contents about software engineering. Its 15 knowledge areas (KAs) are,
+    SWEBOK describes the generally accepted contents about software engineering. Its 15 knowledge areas (KAs) are,
  
- ## Software Requirements
+ ## 1 Software Requirements
     1. Understanding what the software should do and the constraints under which it must operate.
     2. Specifying, and validating requirements, and managing them throughout the lifecycle of the project.
   
@@ -673,3 +673,57 @@ Informative elements offer extra insights but aren't mandatory for claiming comp
     1. This covers the basic principles of engineering that are relevant to software engineering. 
     2. It includes topics like system engineering, control theory, and the application of scientific methods to software development.
     
+## 2 Requirement Analysis
+    1. Software Requirement Analysis is a crucial phase in software engineering, focusing on understanding and documenting user needs and system constraints.
+    2. The primary goal is to translate high-level requirements into detailed specifications that serve as a foundation for the software development process.
+
+ ### Requirement Classification
+  #### Functional vs Nonfunctional
+       1. Functional requirements specify what the system should do.
+       2. Nonfunctional requirements describe how the system should operate.
+  #### Priority and Scope
+      1. Priority determines the essentiality of a requirement. 
+      2. Scope refers to the extent to which a requirement affects the software and its components.
+  #### Product or Process 
+    1. Product requirements affect the software itself.
+    2. Process requirements constrain the choice of contractor, software engineering process, or standards.
+  #### Volatility/Stability Requirements
+    Some requirements are likely to change during the software's life cycle.
+  #### Derived or Imposed Requirements
+    1. Derived requirements come from higher-level requirements.
+    2. Imposed requirements are imposed by stakeholders or other sources
+
+## 3. Conceptual Modeling 
+   #### Purpose of Conceptual Models
+       Conceptual models aid in understanding the problem and depicting a solution. They comprise models of entities from the problem domain, reflecting their real-world relationships and dependencies. 
+  #### Factors Influencing Modeling Notation
+     The choice of modeling notation is influenced by the nature of the problem, the software engineer's expertise, and the process requirements of the customer. It is essential to start by building a model of the software context to understand its operational environment and interfaces.
+
+## 4. Architectural Design and Requirements Allocation
+    Architectural design involves defining the overall structure of a system.
+    **High level decisions** Regarding data flow and storage, control flow and execution logic.
+    **Quality Attributes** In terms of scalability, Maintainability, Reliability, security, and performance  
+    **Mapping Requirements** Involves mapping each system requirement to the specific component responsible for fulfilling that requirement.
+    **Traceability** Helps in validating that each requirement is addressed and tested by architectural component. 
+    **Verification and Validation** Involves confirming that the system, as built meets the user’s needs.
+    **Evolution and Changes** It helps In managing changes efficiently by understanding which components need modification or extension
+
+## 5. Requirements Negotiation
+    1. It concerns resolving conflicts between requirements, stakeholders, and resources. 
+    2. It is important to prioritize requirements and plan for staged deliveries, taking into account detailed domain knowledge and good estimation skills
+
+## 6. Formal Analysis
+  ### Benefits of Formal Analysis
+    1. Precision Mathematical models and notations help eliminate ambiguity and ensure a clear understanding of system behaviour.
+    2. Verification of correctness early error detection
+  ### Tool Support and Challenges
+    1. Relies on theorem provers or model checkers.
+    2. Limited automation; competence in formal reasoning needed
+  ### Focus and Timing
+    1. Counterproductive until business goals and requirements are clear.
+    2. Formalize critical requirements for static validation.
+ 
+ ## Conclusion
+     In conclusion, software requirements analysis is a crucial process in the development of software systems. Understanding the dimensions of requirements, modeling notations, 
+     architectural design, requirements negotiation, and formal analysis are essential for successful project outcomes. The careful classification, modeling, and negotiation of requirements  
+     are key to delivering effective software solutions that meet the needs of stakeholders and users.

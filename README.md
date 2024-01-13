@@ -584,7 +584,7 @@ Informative elements offer extra insights but aren't mandatory for claiming comp
    ### Staged View: 
    1.  Follows a predefined and proven path with case study and ROI data. Emphasizes organizational improvement, and overall results are summarized in maturity levels.
   ### Continuous View: 
-   1.  Offers maximum flexibility for the order of process improvement. Focuses on improvement within process areas, and improvement can occur at different rates.
+   1.  Offers maximum flexibility for the order of process improvement. It focuses on improvement within process areas, and improvement can occur at different rates.
 
 ## +SAFE Extension:
   ### Purpose: 
@@ -598,9 +598,9 @@ Informative elements offer extra insights but aren't mandatory for claiming comp
 
 ## Key Points:
   ### Maturity Levels:
-   Both representations (Continuous and Staged) share common discriminators in terms of maturity levels.
+   Both representations (Continuous and Staged) share common discriminators regarding maturity levels.
  ### Integration: 
-  CMMI can help integrate traditionally separate organizations, set process improvement goals, provide guidance for quality processes, and serve as a yardstick for appraising current practices.
+  CMMI can help integrate traditionally separate organizations, set process improvement goals, guide quality processes, and serve as a yardstick for appraising current practices.
 
 ## Benefits of +SAFE Extension:
   1. Identifies safety strengths and weaknesses early in the acquisition process.
@@ -609,3 +609,67 @@ Informative elements offer extra insights but aren't mandatory for claiming comp
 ## Comparison:
   1. Continuous vs. Staged: While the continuous representation offers flexibility in the order of improvement and focuses on process areas, the staged representation follows a predefined path, emphasizing organizational improvement with results summarized in maturity levels.
 
+
+# Software Engineering Body of Knowledge (SWEBOK)
+  SWEBOK describes the generally accepted contents about software engineering. Its 15 knowledge areas (KAs) are,
+ 
+ ## Software Requirements
+    1. Understanding what the software should do and the constraints under which it must operate.
+    2. Specifying, and validating requirements, and managing them throughout the lifecycle of the project.
+  
+   ## Software Design: 
+    1. Defining the architecture, components, interfaces, and other characteristics of a system or component. 
+    2. Creating a plan that describes the structure and behaviour of the software, ensuring it meets the specified requirements. 
+    3. Key aspects include architectural styles, design patterns, and user interface design.
+    
+   ## Software Construction: 
+    1. Programming phase, where developers translate design into source code. 
+    2. This phase requires a deep understanding of programming languages and development tools.
+  
+   ## Software Testing: 
+    1. It includes test planning, design, execution, and evaluation. 
+    2. The aim is to ensure that the software meets its requirements and is free of defects.
+       
+   ## Software Maintenance: 
+    1. Correcting defects, improving performance or other attributes, and adapting to a changed environment.
+    2. Maintenance is an ongoing activity and often requires more resources than the initial development.
+       
+   ## Software Configuration Management: 
+    1. Involves identifying and organizing the configuration of software (source code, documentation, etc).
+    2. Controlling changes and maintaining integrity and traceability throughout the software life cycle.
+  
+   ## Software Engineering Management: 
+    1. Planning, coordinating, measuring, monitoring, controlling, and reporting software projects.
+    2. Understanding project management principles, including risk management, planning, scheduling, resource allocation, and leadership.
+  
+   ## Software Engineering Process:
+    1. Involves understanding software life cycle models, methodologies, process assessment and improvement, and project management.
+       
+   ## Software Engineering Models and Methods: 
+     1. Encompasses various models and methods used in software engineering.
+     2. Includes traditional and agile methodologies, modelling languages, and the design and analysis of algorithms.
+  
+   ## Software Quality: 
+    1. Ensuring that software meets the required level of quality.
+    2. Software quality is closely linked to software testing but has a broader focus, including the process and the product.
+  
+  ## Software Engineering Professional Practice
+    1. Ethical, legal, and professional responsibilities of software engineers.
+    2. Understanding codes of ethics, professional conduct, team dynamics, and effective communication within a software development team.
+  
+  ## Software Engineering Economics
+    1. Understanding the financial and economic aspects of software engineering, such as cost estimation, cost-benefit analysis, and budgeting.
+    2. Crucial for decision-making and assessing the viability of projects.
+  
+  ## Computing Foundations
+    1. This chapter provides a foundation in computer science that supports software engineering. 
+    2. Topics include algorithms, data structures, programming languages, and the theory of computation.
+       
+  ## Mathematical Foundations
+    1. This includes the mathematical concepts necessary for software engineering, such as logic, sets, functions, algebra, and probability. 
+    2. These concepts are fundamental in algorithm design and systems modeling.
+  
+  ## Engineering Foundations
+    1. This covers the basic principles of engineering that are relevant to software engineering. 
+    2. It includes topics like system engineering, control theory, and the application of scientific methods to software development.
+    

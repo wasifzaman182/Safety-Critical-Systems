@@ -32,7 +32,7 @@ This Repo will have all topics of safety-critical systems which is being taught 
 
 # Complexity Metrics in SCS
     --> Complexity metrics in SCS are measures used to quantify the intricacy(detail Small part of a system) and intricacies of the software or system design.
-    --> These metrics help assess the potential challenges and risks associated with managing and maintaining safety-critical software.
+    --> These metrics help assess the potential challenges and risks of managing and maintaining safety-critical software.
 
 Below are some of them.
 
@@ -52,8 +52,8 @@ Below are some of them.
     Fan-In measures the number of functions or methods that call a particular function or method. Fan-Out measures the number of functions or methods called by a specific function or method.
 
 ## Coupling and Cohesion Metrics
-    Metrics related to the coupling and cohesion of software components provide insights into how interconnected and independent different parts of the system are. Low coupling and high 
-    cohesion are generally desirable in safety-critical systems.
+    Metrics related to the coupling and cohesion of software components provide insights into how interconnected and independent different system parts are. Low coupling and high 
+    cohesion is generally desirable in safety-critical systems.
 
 ## Component Interactions
     Analyzing the number and nature of interactions between components or modules can provide insights into the potential complexity of the system's behaviour.
@@ -87,8 +87,8 @@ Below are some of them.
     complexity can lead to challenges in understanding, testing, and ensuring the reliability of the software.
 
 ### Autonomous Systems Risks
-    The development and deployment of autonomous systems, such as autonomous vehicles and drones, introduce new risks. Issues related to perception, decision-making algorithms, and the 
-    ability to handle unforeseen scenarios pose challenges in ensuring the safety of these systems
+    Developing and deploying autonomous systems, such as autonomous vehicles and drones, introduce new risks. Issues related to perception, decision-making algorithms, and the 
+    ability to handle unforeseen scenarios poses challenges in ensuring the safety of these systems
 
 ### Machine Learning and AI Risks:
     Safety-critical systems incorporating machine learning and artificial intelligence algorithms face challenges in ensuring the predictability and reliability of AI-driven decisions. 
@@ -272,13 +272,13 @@ The standard of ICE61508 is in 7 different parts but we will focus on 1 to 3
 ### ALARP (As Low As Reasonably Practicable):
     1. ALARP is about making risks as low as possible without going to extreme measures. It recognizes that, in some situations, it's not realistic to aim for zero risk, but we should do 
       everything reasonable to make things safe. [^]
-    **Example**: Think of driving a car. You want to reduce the risk of accidents as much as possible (ALARP), but you also understand that you can't eliminate all risk. So, you wear a 
+    **Example**: Think of driving a car. You want to reduce the risk of accidents as much as possible (ALARP), but you also understand that you can't eliminate all risks. So, you wear a 
       seatbelt and follow traffic rules to make it as safe as reasonably possible.
 
 ### Determining Acceptable Risk:
     1. In Simple Words: Deciding what level of risk is acceptable is like weighing the benefits and efforts. If the benefits are huge, we might accept a bit more risk. If reducing risk 
        requires a lot of effort and the benefits are small, we might accept a bit more risk too.
-    **Example:** When deciding safety measures for a new technology, like a smartphone, you consider how much people will benefit from it and how hard it would be to make it completely risk- 
+    **Example:** When deciding safety measures for a new technology, like a smartphone, you consider how much people will benefit from it and how hard it would be to make it completely risky-- 
       free.
 ![2 2](https://github.com/wasifzaman182/Safety-Critical-Systems/assets/75499379/da4315c6-c25e-4a9a-8d21-f6692b410940)
 
@@ -448,7 +448,7 @@ The standard of ICE61508 is in 7 different parts but we will focus on 1 to 3
 ## Defect Density:
  ### Metrics:
     Number of defects.
-    Code churn (changes to code).
+    Code churn (code changes).
 
   ### Quantification:
     Calculate defects per line of code.
@@ -682,7 +682,7 @@ The standard of ICE61508 is in 7 different parts but we will focus on 1 to 3
        
   #### Mathematical Foundations
     1. This includes the mathematical concepts necessary for software engineering, such as logic, sets, functions, algebra, and probability. 
-    2. These concepts are fundamental in algorithm design and systems modeling.
+    2. These concepts are fundamental in algorithm design and systems modelling.
   
   #### Engineering Foundations
     1. This covers the basic principles of engineering that are relevant to software engineering. 
@@ -716,10 +716,10 @@ The standard of ICE61508 is in 7 different parts but we will focus on 1 to 3
 
 ## 4. Architectural Design and Requirements Allocation
     Architectural design involves defining the overall structure of a system.
-    **High level decisions** Regarding data flow and storage, control flow and execution logic.
+    **High-level decisions** Regarding data flow and storage, control flow and execution logic.
     **Quality Attributes** In terms of scalability, Maintainability, Reliability, security, and performance  
     **Mapping Requirements** Involves mapping each system requirement to the specific component responsible for fulfilling that requirement.
-    **Traceability** Helps in validating that each requirement is addressed and tested by architectural component. 
+    **Traceability** Helps in validating that each requirement is addressed and tested by architectural components. 
     **Verification and Validation** Involves confirming that the system, as built meets the user’s needs.
     **Evolution and Changes** It helps In managing changes efficiently by understanding which components need modification or extension
 
@@ -739,12 +739,12 @@ The standard of ICE61508 is in 7 different parts but we will focus on 1 to 3
     2. Formalize critical requirements for static validation.
  
  ## Conclusion
-     In conclusion, software requirements analysis is a crucial process in the development of software systems. Understanding the dimensions of requirements, modeling notations, 
-     architectural design, requirements negotiation, and formal analysis are essential for successful project outcomes. The careful classification, modeling, and negotiation of requirements  
+     In conclusion, software requirements analysis is a crucial process in the development of software systems. Understanding the dimensions of requirements, modelling notations, 
+     architectural design, requirements negotiation, and formal analysis is essential for successful project outcomes. The careful classification, modelling, and negotiation of requirements  
      are key to delivering effective software solutions that meet the needs of stakeholders and users.
 
 # V-Model – Software Engineering
-    1. It executes in a sequential manner in a V-shape. 
+    1. It executes sequentially in a V-shape. 
     2. It is also known as the Verification and Validation model. 
     3. The development of each step is directly associated with the testing phase. 
     4. The next phase starts only after completion of the previous phase i.e., for each development activity, there is a testing activity corresponding to it.
@@ -756,7 +756,7 @@ The standard of ICE61508 is in 7 different parts but we will focus on 1 to 3
   #### Design: 
     In the design phase, the software architecture and design are developed, including the high-level design and detailed design.
   #### Implementation:
-     In the implementation phase, the software is actually built based on the design.
+     In the implementation phase, the software is built based on the design.
   #### Testing: 
      In the testing phase, the software is tested to ensure that it meets the customer’s requirements and is of high quality.
  #### Deployment:
@@ -770,15 +770,15 @@ The standard of ICE61508 is in 7 different parts but we will focus on 1 to 3
 
  ## Different phases in a V-Model 
    ### Verification Phases:
-       It involves static analysis technique (review) done without executing code. It is the process of evaluation of the product development phase to find whether specified requirements            meet.
- There are several Varification phases in the V-Model:
+       It involves a static analysis technique (review) done without executing code. It is the process of evaluation of the product development phase to find whether specified requirements            are met.
+ There are several Verification phases in the V-Model:
 
    #### Business Requirement Analysis
         1. Initiates the development cycle by aligning product requirements with customer perspectives.
         2. Crucial for understanding and communicating with customers to clarify their needs.
         3. Acceptance test design planning is done during this phase for future acceptance testing.
    #### System Design:
-       1. Begins after clear understanding of product requirements.
+       1. Begins after a clear understanding of product requirements.
        2. Enables comprehensive system design, beneficial for future test case execution.
    #### Architectural Design (High-Level Design - HLD):
        1. Specifies and comprehends architectural specifications.
@@ -801,9 +801,9 @@ The standard of ICE61508 is in 7 different parts but we will focus on 1 to 3
   #### Integration Testing:
         1. Conducted after unit testing.
         2. Modules are integrated, and system communication is tested.
-        3. Validates module interactions based on the architectural design.
+        3. Validate module interactions based on the architectural design.
   #### System Testing:
-        1. Tests the complete application for functionality, interdependency, and communication.
+        1. Test the complete application for functionality, interdependency, and communication.
         2. Validates both functional and non-functional requirements.
   #### User Acceptance Testing (UAT):
         1. Performed in a user environment resembling the production environment.
@@ -819,11 +819,11 @@ The standard of ICE61508 is in 7 different parts but we will focus on 1 to 3
  #### Scalability:
         1. V-Model is flexible and can accommodate IT projects of varying sizes, complexities, and durations.
  #### Cross Referencing:
-        1. Direct correlation between requirements and corresponding testing activities is established.
+        1. A direct correlation between requirements and corresponding testing activities is established.
 ### When to use? 
         1. Where requirements are clearly defined and fixed.
         2. The V-Model is used when ample technical resources are available with technical expertise.
-        3. Small to medium-sized projects with set and clearly specified needs are recommended to use the V-shaped model.
+        3. Small to medium-sized projects with set and specified needs are recommended to use the V-shaped model.
         4. Since it is challenging to keep stable needs in large projects, the project should be small.
 
 ### Advantages: 
@@ -838,8 +838,8 @@ The standard of ICE61508 is in 7 different parts but we will focus on 1 to 3
         9. Better Communication: The clear structure of the V-Model helps to improve communication between the customer and the development team.
 ### Disadvantages: 
         1. High risk and uncertainty.
-        2. It is not a good for complex and object-oriented projects.
-        3. It is not suitable for projects where requirements are not clear and contains high risk of changing.
+        2. It is not good for complex and object-oriented projects.
+        3. It is not suitable for projects where requirements are not clear and contain a high risk of changing.
         4. This model does not support iteration of phases.
         5. It does not easily handle concurrent events.
         6. Inflexibility: The V-Model is a linear and sequential model, which can make it difficult to adapt to changing requirements or unexpected events.

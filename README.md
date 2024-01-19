@@ -845,3 +845,22 @@ The standard of ICE61508 is in 7 different parts but we will focus on 1 to 3
         6. Inflexibility: The V-Model is a linear and sequential model, which can make it difficult to adapt to changing requirements or unexpected events.
         7. Time-Consuming: The V-Model can be time-consuming, as it requires a lot of documentation and testing.
         8. Overreliance on Documentation: The V-Model places a strong emphasis on documentation, which can lead to an overreliance on documentation at the expense of actual development work.
+
+
+# ICE 61508
+        1. This standard consists of planning, designing, implementing and maintaining safety-related systems. This standard applies to either electrical/electronics/Programmable electronic safety-related systems.
+        2. The fundamental concept is that any safety-related system must work correctly or fail in a predictable(safe) way.
+ 
+ The standard has two fundamental principles
+            1. An engineering process called the safety life cycle (FTA etc) is defined based on best practices to discover and eliminate design errors and omissions.
+            2. A probabilistic failure approach to account for the safety impact of device failures. The risk is a function of the frequency (or likelihood) of the hazardous event and the event consequence severity. Many requirements                   apply to all technologies but there is a strong emphasis on programmable electronics, especially.
+
+IEC 61508 has the following views on risks:
+          1. Zero risk can never be reached, only probabilities can be reduced
+          2. Non-tolerable risks must be reduced (ALARP) (The principle is that the residual risk shall be reduced as far as reasonably practicable).
+          3. Optimal, cost-effective safety is achieved when addressed in the entire safety lifecycle
+
+ #### Hazard and risk analysis
+         1. The standard requires that hazard and risk assessment be carried out for bespoke systems: 'The EUC (equipment under control) risk shall be evaluated, or estimated, for each determined hazardous event'.
+         2. The standard advises that 'Either qualitative or quantitative hazard and risk analysis techniques may be used' and offers guidance on many approaches. for details please check https://en.wikipedia.org/wiki/IEC_61508.
+         

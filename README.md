@@ -863,4 +863,47 @@ IEC 61508 has the following views on risks:
  #### Hazard and risk analysis
          1. The standard requires that hazard and risk assessment be carried out for bespoke systems: 'The EUC (equipment under control) risk shall be evaluated, or estimated, for each determined hazardous event'.
          2. The standard advises that 'Either qualitative or quantitative hazard and risk analysis techniques may be used' and offers guidance on many approaches. for details please check https://en.wikipedia.org/wiki/IEC_61508.
-         
+
+
+# Iterative Development and the Unified Process (UP)
+![UP](https://github.com/wasifzaman182/Safety-Critical-Systems/assets/75499379/00860f9a-7de7-4dc7-a607-ef83d21216be)
+
+      1. The unified software development process or unified process is an iterative and incremental software development process framework. The best-known and extensively documented refinement of the unified process is the rational unified process (RUP).
+      2. The unified process is not simply a process, but rather an extensible framework which should be customized for specific organizations or projects. 
+      3. The Unified Process (UP) is an iterative, partly agile process model, originally developed for projects using OOA/OOD.
+      4. The elaboration, construction and transition phases are divided into a series of timeboxed iterations.
+      5. Each iteration results in an increment, which is a release of the system that contains added or improved functionality compared with the previous release.   
+      
+### Architecture-centric
+    1. The unified process insists that architecture sits at the heart of the project team's efforts to shape the system.
+    2. One of the most important deliverables of the process is the executable architecture baseline which is created during the elaboration phase. This partial implementation of the system serves to validate the architecture and act as a foundation for the remaining 
+       development.
+### Risk-focused
+    1. The unified process requires the project team to focus on addressing the most critical risks early in the project life cycle. The deliverables of each iteration, especially in the elaboration phase, must be selected to ensure that the greatest risks 
+        are addressed first.
+        
+### Project lifecycle (phases of unified process)
+    1. Inception
+    2. Elaboration (milestone)
+    3. Construction (release)
+    4. Transition (final production release)
+
+  #### Inception phase
+      1. It should be quite short
+      2. If the inception phase is long then it may be an indication of excessive up-front specification, which is contrary to the spirit of the unified process.
+      3. Develop an approximate vision of the system, make the business case, define the scope, and produce a rough cost estimate and project schedule.
+ #### Elaboration phase
+     1. The elaboration phase focuses on defining the system architecture and addressing known risks. It produces an executable architecture baseline and a detailed plan for the construction phase.
+     2. The architecture is validated primarily through the implementation of an executable architecture baseline
+     3. This is a partial implementation of the system which includes the core most architecturally significant components
+     4. It is built in a series of small time-boxed iterations
+     5. This phase includes the creation of use case diagrams, conceptual diagrams (class diagrams with only basic notation) and package diagrams (architectural diagrams).
+#### Construction phase
+    1. In this phase, the remainder of the system is built on the foundation laid in elaboration.
+    2. System features are implemented in a series of short, time-boxed iterations
+    3. Each iteration results in an executable release of the software. It is customary to write full-text use cases during the construction phase and each one becomes the start of a new iteration.
+    4. Common Unified Modeling Language (UML) diagrams used during this phase include activity diagrams, sequence diagrams, collaboration diagrams, state transition diagrams and interaction overview diagrams.
+#### Transition phase
+    1. In this phase the system is deployed to the target users
+    2. Feedback received from an initial release (or initial releases) may result in further refinements to be incorporated for several transition phase iterations
+    3. The transition phase also includes system conversions and user training.

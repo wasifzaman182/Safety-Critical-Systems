@@ -882,7 +882,7 @@ IEC 61508 has the following views on risks:
     1. The unified process requires the project team to focus on addressing the most critical risks early in the project life cycle. The deliverables of each iteration, especially in the elaboration phase, must be selected to ensure that the greatest risks 
         are addressed first.
         
-### Project lifecycle (phases of unified process)
+### Project lifecycle (phases of Unified process)
     1. Inception
     2. Elaboration (milestone)
     3. Construction (release)
@@ -908,3 +908,84 @@ IEC 61508 has the following views on risks:
     2. Feedback received from an initial release (or initial releases) may result in further refinements to be incorporated for several transition phase iterations
     3. The transition phase also includes system conversions and user training.
 
+#### UP Best Practices and Concepts
+     1. Central UP idea: Short, timeboxed, iterative, adaptive development.
+     2. OOA/OOD/OOP/OOT
+     3. High-risk, high-value issues are tackled in early iterations.
+     4. Continuous engagement of users for evaluation, feedback, and requirements.
+     5. Cohesive core architecture built in early iterations. →
+     Architectural design is crucial for success!
+     6. Continuous verification of quality: testing early, often and realistically.
+     7. Application of use cases.
+     8. Software model visualisation with UML.
+     9. Careful requirements management.
+     10. Practical change request and configuration management.
+     
+#### RUP & IEC61508 Combination
+
+![RUPAndICE61508](https://github.com/wasifzaman182/Safety-Critical-Systems/assets/75499379/d210b537-6fe1-4aa9-888d-c06f2fa4d9d3)
+![RupAndICE2](https://github.com/wasifzaman182/Safety-Critical-Systems/assets/75499379/8a2ea395-04ac-40f0-8ce2-7b029c3e3bb8)
+
+#### 1st Example for Combination
+    1. A hazard and risk analysis document has to be produced and  updated throughout the overall safety lifecycle.
+    2. There are three objectives with the hazard and risk analysis:
+         1. To determine the hazards and hazardous events of the EUC and EUC control system,
+         2. To determine the event sequences leading to the hazardous events
+         3. To determine the EUC risks associated with the hazardous events
+  
+    3. Are these requirements met by the default configuration of RUP?
+        i. The information required by these requirements is not provided by RUP.
+    4. Are these requirements in contradiction with RUP?
+       i. These requirements only call for additional information and are therefore not in contradiction with RUP.
+    5. How should these requirements be implemented within RUP?
+       i. These requirements can be implemented within RUP as an activity- Plan Hazard and risk analysis- that is performed by a role- Safety Manager- and the result is an artifact- Hazard and risk analysis plan.
+
+#### Enhanced RUP: Safety RUP
+     1. Additional RUP discipline: Safety discipline
+     2. The purpose of the Safety discipline is:
+         1. to define the concept of the system,
+         2. to define the scope of the system,
+         3. to perform hazard and risk analysis,
+         4. to specify the safety requirements of the system,
+         5. to plan operation & maintenance of the system,
+         6. to perform safety validation of the system.
+
+# Software Process and Project Metrics
+ #### General Benefits
+     1. Process indicators enable a software engineering organization to gain insight into the efficacy of an existing process (i.e., the paradigm, software engineering tasks, work products, and milestones)
+     2. they intend to provide indicators that lead to long-term software process improvement.
+     3. Project indicators enable a software project manager to
+            i. Assess the status of an ongoing project, 
+            ii. track potential risks, 
+            iii. uncover problem areas before they go critical,
+            iv. adjust workflow or tasks, and
+            v.  evaluate the project team’s ability to control the quality of software work products
+
+ ####  Software Process Improvement
+    1. The only way to improve any process is to measure specific attributes of the process, develop a set of meaningful metrics based on these attributes, and then use the metrics to provide indicators that will lead to a strategy for 
+       improvement. 
+       
+## 1. Size-Oriented Metrics
+     1. LOC measures are programming language dependent.
+     2. LOC penalize well-designed but shorter programs.
+     3. LOC cannot easily accommodate nonprocedural languages.
+     4. TheuseofLOCinestimation requires a level of detail that may
+     5. be difficult to achieve (i.e., the planner must estimate the LOC to
+     6. be produced long before analysis and design have been completed)
+     
+## 2. Technical Metrics  --> Goals of Measuring 
+    1.  Identify the Goal for the product/process/resource. This is the goal that your metrics customer is trying to achieve.
+    2. Determine the Question(s) that will characterize the way the achievement of the goal is going to be assessed.
+    3. Definet the metric (s) that will provide a quantitative answer to each question. Metrics can be objective (based solely on the object being measured) or subjective (based on the viewpoint taken as well as the object measured).
+
+ ####  Different Approaches
+     1. Complexity metrics
+     2. McCall’s software metrics
+     3. The Bangmetric
+     4. Architectural Design metrics
+     5. Coupling and Cohesion metrics
+     6. CardandGlass metric
+     7. Interface Design metric
+     8. Halstead’s software science
+     9. Testing metrics
+     10 Object-Oriented metrics

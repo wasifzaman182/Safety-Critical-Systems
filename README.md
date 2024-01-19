@@ -907,3 +907,4 @@ IEC 61508 has the following views on risks:
     1. In this phase the system is deployed to the target users
     2. Feedback received from an initial release (or initial releases) may result in further refinements to be incorporated for several transition phase iterations
     3. The transition phase also includes system conversions and user training.
+

@@ -975,7 +975,7 @@ IEC 61508 has the following views on risks:
      
 ## 2. Technical Metrics  --> Goals of Measuring 
     1.  Identify the Goal for the product/process/resource. This is the goal that your metrics customer is trying to achieve.
-    2. Determine the Question(s) that will characterize the way the achievement of the goal is going to be assessed.
+    2. Determine the Question(s) that will characterize how the goal is achievement will be assessed.
     3. Definet the metric (s) that will provide a quantitative answer to each question. Metrics can be objective (based solely on the object being measured) or subjective (based on the viewpoint taken as well as the object measured).
 
  ####  Different Approaches
@@ -989,3 +989,100 @@ IEC 61508 has the following views on risks:
      8. Halstead’s software science
      9. Testing metrics
      10 Object-Oriented metrics
+
+# Requirements Traceability Matrix (RTM)
+    1. Give each requirement item an ID
+    2. Short title of the requirements item
+    3. Add short Description: Functional, non-functional, safety, security, etc.
+    4. Linkto requirements specification document
+    5. Status!!!
+    6. Signature of responsible team member!
+
+# The Semantic Gap
+ Classical Example: Ariane V Crash
+    https://medium.com/dataseries/crash-and-burn-a-short-story-of-ariane-5-flight-501-3a3c50e0e284
+    ####  Accident Root Causes
+          i. Fault-tolerant design
+         ii.  No checks on boundaries, or error propagation, ...
+         iii. Reuse of software
+         iv.  Verification and Validation
+          v.  No testing with real data
+          vi  Certification issues
+        vii.  Software configuration management
+        viii. Semantic Gap
+
+     Software engineers must be knowledgeable and understand
+        i. standard engineering practices,
+        ii. scientific basics, and
+       iii. system design decisions!
+
+ Lufthansa A320 Warsaw
+      Further causes:
+          1. Two captains on the flight deck!
+          2. Thin film of water on the runway that had not been cleared.
+          3. Wheels aquaplaned, skimming surface, without gaining enough rotary speed to tell computer braking systems that the aircraft was landing.
+          4. Sensors information did not trigger the software to declare a touchdown
+          5. Computers (software!!!) refused to allow pilots to use aircraft’s braking systems. So did not work until too late.
+          6. Still would not have been catastrophic if had not built a high bank at the end of the runway.
+          
+    Blaming pilots turns attention away from
+        1. Why pilots were given out-of-date weather information?
+        2. Design of computer-based braking system
+        3. Ignored pilot commands
+        4. Pilots were not able to apply braking systems manually
+        5. Who has final authority? 
+        6. Why allowed to land with water on the runway?
+        7. Why decision made to build a bank at the end of the runway?
+
+# Hazard Analysis
+   #### Basics
+            Hazard analysis investigates factors related to accidents
+            1. Indevelopment to identify and assess potential hazards, and the conditions that can lead to them, so that the hazards can be eliminated or controlled.
+            2. In operations to examine an existing system to improve its safety and to formulate procedures.
+            3.  In licensing examine a planned system to demonstrate acceptable safety.
+####  Hazard Analysis Methods
+    1. Checklists
+    2. Failure modes and effects analysis (FMEA)
+    3. Fault tree analysis (FTA)
+    4. Event tree analysis (ETA)
+
+## Failure modes and effects analysis (FMEA)
+    FMEA is a process to identify and prioritize potential failures in systems, processes, or products to prevent them from causing problems.
+
+   #### FMEA involves the following steps
+    1. Define the system or process
+    2. Identify failure modes
+    3. Determine failure effects
+    4. Assign severity ratings
+    5. Identify causes of failure
+    6. Assign occurrence ratings
+    7. Assign detection ratings
+    8. Calculate risk priority numbers (RPN)
+    9. Prioritize actions
+    10. Implement actions
+    11. Review and update
+
+![FEMA](https://github.com/wasifzaman182/Safety-Critical-Systems/assets/75499379/5765ed06-7dda-4354-afe1-d6e8bcf81ef2)
+
+#  Fault Tree Analysis (FTA) 
+    1. FTA is a systematic method to analyze and assess the causes of undesirable events.
+    2. means for analyzing causes of hazards, not identifying hazards
+    3. The top event must have been foreseen by other techniques. such as
+        1. System Design --> Understanding the design and function of the system can highlight potential critical failure modes or events that need further analysis.
+        2. Operational Experience--> Insights gained from the system's operational history, incidents, or near-misses can provide information about events that warrant attention in the FTA.
+        3. Hazard Analysis Techniques -->  Previous hazard analyses, risk assessments, or safety studies may have already identified and specified the top event as a focus area for further analysis.
+    4. uses Boolean logic to describe the combinations of individual faults 
+    5. Each level lists the more basic events that are necessary and sufficient to cause the problem at the level above it.
+![FTA2 drawio](https://github.com/wasifzaman182/Safety-Critical-Systems/assets/75499379/193a59b6-cef9-4661-a27b-141a6794cfd3)
+
+####  FTA With Safety 
+    1. SFTA identifies safety-critical interfaces and potentially hazardous software behaviour
+    2. Understanding the minimum cut sets in a fault tree analysis is crucial because it helps identify weak points in the system design. These are combinations of events or failures that, if they occur together, could lead to the top 
+       event (undesired outcome).
+    3. Single-Point Failures Can Be Uncovered and Eliminated:
+    4. Events that appear in multiple minimum cut sets are considered critical, as their failure can have a significant impact on the system. Focusing on these common events is essential for effective risk mitigation
+    5. Common-cause failures, where multiple components fail due to a shared cause, may not be immediately apparent in fault tree analysis. Special attention is required to identify and address potential common-cause failure modes.
+    6. If Common-Cause Failure Mode Detected, Elimination Is Easy
+    7. Fault tree analysis provides a static snapshot of the system state and relationships between events. It may not capture the dynamic aspects of fault propagation, such as the sequence of events over time
+    8. Fault Tree Is a Snapshot of the System State
+    9. 35% of Actual In-Flight Malfunctions Not Identified or Not Identified as Credible

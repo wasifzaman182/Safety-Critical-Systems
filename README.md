@@ -1026,7 +1026,7 @@ IEC 61508 has the following views on risks:
           6. Still would not have been catastrophic if had not built a high bank at the end of the runway.
           
     Blaming pilots turns attention away from
-        1. Why pilots were given out-of-date weather information?
+        1. Why were pilots given out-of-date weather information?
         2. Design of computer-based braking system
         3. Ignored pilot commands
         4. Pilots were not able to apply braking systems manually
@@ -1067,7 +1067,7 @@ IEC 61508 has the following views on risks:
 #  Fault Tree Analysis (FTA) 
     1. FTA is a systematic method to analyze and assess the causes of undesirable events.
     2. means for analyzing causes of hazards, not identifying hazards
-    3. The top event must have been foreseen by other techniques. such as
+    3. Other techniques must have foreseen the top event. such as
         1. System Design --> Understanding the design and function of the system can highlight potential critical failure modes or events that need further analysis.
         2. Operational Experience--> Insights gained from the system's operational history, incidents, or near-misses can provide information about events that warrant attention in the FTA.
         3. Hazard Analysis Techniques -->  Previous hazard analyses, risk assessments, or safety studies may have already identified and specified the top event as a focus area for further analysis.
@@ -1080,9 +1080,22 @@ IEC 61508 has the following views on risks:
     2. Understanding the minimum cut sets in a fault tree analysis is crucial because it helps identify weak points in the system design. These are combinations of events or failures that, if they occur together, could lead to the top 
        event (undesired outcome).
     3. Single-Point Failures Can Be Uncovered and Eliminated:
-    4. Events that appear in multiple minimum cut sets are considered critical, as their failure can have a significant impact on the system. Focusing on these common events is essential for effective risk mitigation
+    4. Events that appear in multiple minimum cut sets are considered critical, as their failure can significantly impact the system. Focusing on these common events is essential for effective risk mitigation
     5. Common-cause failures, where multiple components fail due to a shared cause, may not be immediately apparent in fault tree analysis. Special attention is required to identify and address potential common-cause failure modes.
     6. If Common-Cause Failure Mode Detected, Elimination Is Easy
     7. Fault tree analysis provides a static snapshot of the system state and relationships between events. It may not capture the dynamic aspects of fault propagation, such as the sequence of events over time
     8. Fault Tree Is a Snapshot of the System State
     9. 35% of Actual In-Flight Malfunctions Not Identified or Not Identified as Credible
+![FTA3](https://github.com/wasifzaman182/Safety-Critical-Systems/assets/75499379/9096f858-30ab-42f4-90b1-93e355a27a5d)
+
+# Event Tree Analysis (ETA)
+    1. Forward search to identify outcomes of an event
+    2. It is necessary to know, where to start.
+    3. Event tree from left to right
+    4. Branches to two alternatives:
+        i. Upper branch successful performance
+        ii. Lower branch failure
+    5. Includes probabilities
+    6. Initial event characterized by frequency
+    7. Secondary events are probabilities
+    8. Elimination of impossible branches

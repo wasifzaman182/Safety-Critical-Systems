@@ -1099,3 +1099,7 @@ IEC 61508 has the following views on risks:
     6. Initial event characterized by frequency
     7. Secondary events are probabilities
     8. Elimination of impossible branches
+
+    Event tree analysis (ETA) is a forward, top-down, logical modeling technique for both success and failure that explores responses through a single initiating event and lays a path for assessing probabilities of the outcomes and overall system analysis.[1] This analysis technique is used to analyze the effects of functioning or failed systems given that an event has occurred.[2]
+
+ETA is a powerful tool that will identify all consequences of a system that have a probability of occurring after an initiating event that can be applied to a wide range of systems including: nuclear power plants, spacecraft, and chemical plants. This technique may be applied to a system early in the design process to identify potential issues that may arise, rather than correcting the issues after they occur.[3] With this forward logic process, use of ETA as a tool in risk assessment can help to prevent negative outcomes from occurring, by providing a risk assessor with the probability of occurrence. ETA uses a type of modeling technique called "event tree", which branches events from one single event using Boolean logic.

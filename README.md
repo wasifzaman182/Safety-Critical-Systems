@@ -1187,3 +1187,129 @@ IEC 61508 has the following views on risks:
 #### Deviation from Normative Procedure vs. Established Practice:
     1. This suggests that human errors may occur not just from deviating from established norms but also from established practices. 
     2. It emphasizes the need to understand the context and the reasons behind deviations.
+
+# Systems Theory
+  ## Definitions
+   #### System State:
+      1. The system state at a specific time is defined as the set of relevant properties describing the system at that moment.   
+   #### System Environment:
+      1. The system environment comprises components external to the system whose behaviour can influence the system state.
+   #### Abstract Model:
+      1. The system is always considered an abstract model, emphasizing the conceptual representation rather than a concrete, physical entity.
+ ## Foundation of Systems Theory
+   #### Emergence and Hierarchy:
+       1. Emergent properties at a given complexity level are irreducible and manifest differently on various levels.
+       2. Safety is an emergent property in systems.
+       3. Reliability and safety are distinct concepts, with reliability focusing on components' reliability, and safety being an emergent property.
+  #### Communication and Control:
+       1. Control in open systems necessitates communication.
+       2. Imposing constraints on a level's activity is regulatory or control action.
+       3. Optimization of individual components or subsystems may not lead to a system optimum.
+ ## Concept of Emergence:
+ #### Irreducible Properties:
+        1. Emergent properties at a certain complexity level are irreducible and require a holistic understanding.
+        2. Different levels of description reveal varied emergent properties.
+        3. Safety is cited as an emergent property of systems.
+ ## Control and Communication:
+  #### Open Systems:
+        1. In open systems, control implies the need for communication.
+        2. Regulatory actions impose constraints on a level's activity.
+        3. Optimizing individual components or subsystems may not lead to an overall system optimum.
+
+# System-Theoretic Accident Model and Processes (STAMP)
+    1. STAMP is a safety engineering framework used to analyze accidents and hazards systematically.
+    2. The primary components of STAMP are integral to understanding and analyzing accidents from a systems perspective
+    3. In STAMP, accidents are defined in terms of violations of safety constraints, which may result from
+        i. system component failure(s),
+        ii. environmental disturbances, and
+        iii. dysfunctional interactions among (failing or nonfailing (!)) components.
+<img width="709" alt="STPA_basic" src="https://github.com/wasifzaman182/Safety-Critical-Systems/assets/75499379/3b3d1406-27eb-4f74-a245-ed6a47ca3a59">
+
+    3. In STAMP there are different levels such as 
+        i. Constraints
+        ii. Hierarchical levels of control
+        iii. Process models
+    let's explain one by one
+
+#### Constraints 
+    1. In STAMP, constraints are conditions or limitations imposed on the system's behaviour to ensure safety.
+    2. Constraints play a crucial role in shaping the system's responses and actions.
+    3. They can be both physical (e.g., speed limits for vehicles) and behavioural (e.g., operational procedures).
+    for practical understanding please look into the notion document STPA part. 
+#### Hierarchical Levels of Control
+    1. STAMP introduces the concept of hierarchical levels of control to represent the different layers of decision-making within a system.
+    2. The control hierarchy ranges from the highest (strategic) to the lowest (tactic and operational) levels.
+    3. Each level contributes to the overall control of the system and influences its behaviour.
+    for practical understanding please look into the notion document STPA part.
+#### Process Models:
+    1. Process models in STAMP represent the dynamic interactions and sequences of events within a system.
+    2. These models illustrate how information flows, decisions are made, and actions are taken in response to various inputs.
+    3. Understanding process models is crucial for identifying potential systemic issues leading to accidents.
+Note: To understand it with the practical example which is related to ECG, please go to the notion document. 
+
+## System Safety Plan
+    1. Develop a tracking system within the SW and system configuration control structure to ensure traceability of safety requirements and their flow through 
+       documentation.
+    2. Establish the hazard auditing and log file.
+    3. Develop a tracking system within SCM for tracking hazards and their resolution.
+    4. Review lessons learned
+    5. Establish certification and training requirements for personnel involved in the development, testing and operation
+ #### Develop and review
+     1. safety-related SW test plans,
+     2. test descriptions,
+     3. test procedures, and
+     4. test cases.
+ #### Perform safety analysis:
+     1. Hazard analysis, e.g. STAMP
+     2. HMI analysis
+     3. analysis of interfaces between critical and non-critical components.
+
+ ## System Design Tasks
+     1. Update all analyses!
+     2. Makesystemtradeoff studies.
+     3. Ensure that identified hazards are being eliminated or controlled in the evolving design
+     4. Tracesystem hazards into components!
+     5. Again: Identify constraints on subsystems!
+     6. Reviewandimprove test and evaluation procedures during the progressing project
+     7.  Review training and operations plans.
+     8. Evaluate any design changes for safety impact.
+     9. Document all safety decisions and maintain all documents
+     10.  Ensure that safety requirements are incorporated into
+         i. system
+         ii. subsystem-, and
+         iii. HMI requirements.
+ ## Implementation Tasks
+     1. Again: Review and update the hazard analyses!
+     2. Ensure that the SW engineers understand the software-related system safety requirements and constraints.
+     3. Trace software safety requirements and constraints through the code.
+     4. Revie wall designs to safety issues.
+     5. Update testing and verification requirements.
+     6. Review testing results.
+     7. Trace back test results to system hazards.
+     8. Again: Evaluate changes for safety impact.
+     9. Design, update and evaluate training and operational procedures.
+     10. Perform final evaluation of product design.
+     11. Identify safety-critical
+         i. components
+         ii. classes/functions
+         iii. data structures and variables
+          to the SW developers!
+## System Production and Deployment Tasks
+    1. Update hazard analyses
+    2. Perform safety evaluation and verification on system and subsystem level
+    3. Perform safety inspections
+    4. Ensure that safety-related information is incorporated into user/operator and maintenance documents
+    5. Review change proposals for safety impact
+    6. Perform final evaluation of the produced and deployed system
+        i. Test at customer site
+        ii. Flight tests
+## System Operation Tasks
+    1. Update and improve procedures
+    2. Maintain an information feedback system
+    3. Review hazard, incident, and accident analyses
+    4. Conduct safety audits
+    5. Review change and maintenance procedures
+
+# Software Hazard Analysis (Hazard Analysis as Part of Software Design)
+    
+    

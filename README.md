@@ -1175,13 +1175,13 @@ IEC 61508 has the following views on risks:
        1. It points out that technology and its underlying science are complemented by a social system that provides purpose, goals, and decision criteria.
        2. The implication is that accidents should be analyzed not only from a technical perspective but also considering the broader social context.
   ##### Limitations of the CoE Model
-   ###### System Accidents
+   ##### System Accidents
        1. The CoE model may have limitations when dealing with accidents involving entire systems. 
        2. These accidents could be influenced by complex interactions between various components and the overall system architecture.
   ###### Software Failures:
       1. The model might face challenges in adequately addressing software failures.
       2. Software is a critical component in many systems, and its failures may not always fit neatly into a linear chain of events.
-  ###### Human Error:
+ ##### Human Error:
       1. It points out that modelling human behaviour by breaking it down into individual decisions and actions might not be effective.
       2. Understanding human behaviour requires consideration of the broader physical and social context, as well as the value system in which it occurs.
 #### Deviation from Normative Procedure vs. Established Practice:

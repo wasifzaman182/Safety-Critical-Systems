@@ -1310,6 +1310,39 @@ Note: To understand it with the practical example which is related to ECG, pleas
     4. Conduct safety audits
     5. Review change and maintenance procedures
 
+## Inadequate Control Actions
+     In adequate control, actions fall into the following four general categories
+ #### Not Provided
+    1.  A required control action to maintain safety is not provided.
+#### “Incorrectly Provided
+    1. An incorrect or unsafe control action is provided that induces a loss.
+#### Provided Too Early, Too Late, or Out of Sequence
+    1. A potentially correct or adequate control action is provided too early, too late, or out of sequence
+#### Stopped Too Soon
+    1.  A correct control action is stopped too soon
+![HazardFactor](https://github.com/wasifzaman182/Safety-Critical-Systems/assets/75499379/5b0f1531-6a90-444a-96a1-19d588d128c1)
+
+
 # Software Hazard Analysis (Hazard Analysis as Part of Software Design)
-    
-    
+    1. The system design may be changed to eliminate identified hazards which are affected by software or are not adequately handled by software, or to reduce the  
+       hazards to acceptable levels, or to adjust the system architecture so that identified hazards are compensated by defense-in-depth
+    2.  The software design may be changed to eliminate identified hazards or reduce them to acceptable levels.
+    3. The quality of the software may be improved sufficiently to reduce the probability of a hazard to an acceptable level.
+    4. The application system may be rejected if it is considered too hazardous
+    5. General approach: Software hazard analysis should be a defined aspect of the software life cycle!
+ #### Hazard Categories
+ ![hazardCate](https://github.com/wasifzaman182/Safety-Critical-Systems/assets/75499379/22841129-f2be-42d2-8af6-787382cdbcf6)
+![hazardLevels](https://github.com/wasifzaman182/Safety-Critical-Systems/assets/75499379/18ddd7d0-51a4-4bd6-bdcb-9fcd8d2a076f)
+![HazardMatrix](https://github.com/wasifzaman182/Safety-Critical-Systems/assets/75499379/dbaca60f-b32b-4ae4-9632-625fb18e8532)
+
+####  Output of Software Hazard Analysis
+    1. A list of software hazards
+    2. A criticality level for each hazard that can be affected by the software
+    3. A criticality level for each software requirement.
+    4. An analysis of the impact on hazards of the software when it operates correctly or incorrectly.
+    5. Consequences of software hazards for system safety
+    6. A list of software architectural design elements with assigned risk levels.
+    7. Analysis of the impact on hazards of the software when the specified architecture is used.
+    8. A list of design and coding constraints which are required to mitigate hazards associated with the architecture.
+    9. Recommendations for design changes.
+    10. Recommendations for increased analysis and testing to be carried out during detailed design V&V, code V&V and final system validation.

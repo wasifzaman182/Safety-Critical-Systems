@@ -1136,6 +1136,8 @@ IEC 61508 has the following views on risks:
   ##### Document ETA:
       1. Document the entire process on the event tree diagrams.
       2. Update information as needed.
+![Event_Tree_Diagram](https://github.com/wasifzaman182/Safety-Critical-Systems/assets/75499379/cb01fff2-7368-4d57-bb7e-573b7313f9cf)
+
 #  Chain of Events Models
     1. This model helps analyze and understand the sequence of events that could lead to hazardous situations or accidents.
  #### Event Chain:

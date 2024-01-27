@@ -1032,7 +1032,7 @@ IEC 61508 has the following views on risks:
         4. Pilots were not able to apply braking systems manually
         5. Who has final authority? 
         6. Why allowed to land with water on the runway?
-        7. Why decision made to build a bank at the end of the runway?
+        7. Why was the decision made to build a bank at the end of the runway?
 
 # Hazard Analysis
    #### Basics
@@ -1081,7 +1081,7 @@ IEC 61508 has the following views on risks:
        event (undesired outcome).
     3. Single-Point Failures Can Be Uncovered and Eliminated:
     4. Events that appear in multiple minimum cut sets are considered critical, as their failure can significantly impact the system. Focusing on these common events is essential for effective risk mitigation
-    5. Common-cause failures, where multiple components fail due to a shared cause, may not be immediately apparent in fault tree analysis. Special attention is required to identify and address potential common-cause failure modes.
+    5. Common-cause failures, where multiple components fail due to a shared cause, may not be immediately apparent in fault tree analysis. I would need special attention to identify and address potential common-cause failure modes.
     6. If Common-Cause Failure Mode Detected, Elimination Is Easy
     7. Fault tree analysis provides a static snapshot of the system state and relationships between events. It may not capture the dynamic aspects of fault propagation, such as the sequence of events over time
     8. Fault Tree Is a Snapshot of the System State
@@ -1099,7 +1099,89 @@ IEC 61508 has the following views on risks:
     6. Initial event characterized by frequency
     7. Secondary events are probabilities
     8. Elimination of impossible branches
+    9. Determine the probability of negative outcomes resulting from an initiating event.
+    10. Use detailed system information to construct the event tree diagram.
+ #### Construction of Event Tree Diagram:
+   ##### Initiating Event:
+       1. Begins with an initiating event, often binary (success/failure).
+       2. Consequences follow in a series of successes or failures.
 
-    Event tree analysis (ETA) is a forward, top-down, logical modeling technique for both success and failure that explores responses through a single initiating event and lays a path for assessing probabilities of the outcomes and overall system analysis.[1] This analysis technique is used to analyze the effects of functioning or failed systems given that an event has occurred.[2]
+  ##### Probability Calculation:
+       1. Use fault tree analysis to calculate the probability of failures for intermediate events.
+       2. Probability of success (ps) is calculated as ps = 1 - probability of failure (pf).
+  ##### Event Tree Diagram:
+       1. Models all possible pathways from the initiating event.
+       2. Initiating event starts horizontally and branches vertically.
+       3. Success/failure represented by vertical branches.
+       4. Each event labeled with a tag (e.g., 1s for success, 1f for failure).
+#### Steps for Event Tree Analysis:
+   ##### Define the System:
+       1. Establish system boundaries and components.
+   ##### Identify Accident Scenarios:
+       1. Assess the system to find potential hazards or accident scenarios.
+   ##### Identify Initiating Events:
+       1. Use hazard analysis to define specific initiating events.
+   ##### Identify Intermediate Events:
+       1. Identify countermeasures associated with each scenario.
+   ##### Build Event Tree Diagram:
+       1. Construct the event tree diagram outlining possible pathways.
+   ##### Obtain Event Failure Probabilities:
+       1. If failure probability is not obtained, use fault tree analysis.
+  ##### Identify Outcome Risk:
+      1. Calculate the overall probability of event paths and determine risk.
+  ##### Evaluate Outcome Risk:
+      1. Assess the risk of each path and determine acceptability.
+  ##### Recommend Corrective Action:
+      1. Develop design changes to mitigate unacceptable risks.
+  ##### Document ETA:
+      1. Document the entire process on the event tree diagrams.
+      2. Update information as needed.
+#  Chain of Events Models
+    1. This model helps analyze and understand the sequence of events that could lead to hazardous situations or accidents.
+ #### Event Chain:
+    1. The model identifies a series of events that can lead to a hazardous outcome. 
+    2. These events are linked in a chain, where each event contributes to the overall risk.
+#### Initiating Event:
+    1. The chain typically starts with an initiating event, a failure, an error, or some unexpected circumstance.
+    2. This event triggers the sequence that may lead to a safety-critical situation.
+     e.g  1. A sensor failure in an aircraft's navigation system.
+          2. An operator error in a nuclear power plant control room.
+          3. An unexpected surge in demand for an online banking system.
+          4. A software bug in a medical device      
+#### Intermediate Events
+    1. Following the initiating event, there are intermediate events in the chain.
+    2. These events may involve system components, human actions, environmental factors, or other elements that contribute to the unfolding scenario.
+#### Contributing Factors:
+    1. The model considers various contributing factors at each stage of the chain.
+    2. These factors can include design flaws, software errors, hardware failures, human errors, external conditions, etc.
+#### Propagation of Events:
+    1. The chain illustrates how events propagate and interact with each other.
+    2. It shows the causal relationships between different elements, helping analysts understand the dynamics of the system.
+#### Critical Points
+    1. The model identifies critical points in the chain where the risk becomes significant.
+    2. These critical points are often the junctures where preventive or mitigative measures can be applied to break the chain and prevent a hazardous outcome.
+#### Risk Analysis:
+    1. The CoE model is a valuable tool for risk analysis.
+    2. By assessing the likelihood and consequences of each event in the chain, safety engineers can quantify and prioritize risks, informing decision-making for 
+       safety improvements
+#### Iterative Process:
+    1. Safety analysis using the Chain of Events model is often an iterative process. 
+    2. As more information becomes available or as system changes occur, the model can be revisited and updated to ensure its accuracy and relevance.
 
-ETA is a powerful tool that will identify all consequences of a system that have a probability of occurring after an initiating event that can be applied to a wide range of systems including: nuclear power plants, spacecraft, and chemical plants. This technique may be applied to a system early in the design process to identify potential issues that may arise, rather than correcting the issues after they occur.[3] With this forward logic process, use of ETA as a tool in risk assessment can help to prevent negative outcomes from occurring, by providing a risk assessor with the probability of occurrence. ETA uses a type of modeling technique called "event tree", which branches events from one single event using Boolean logic.
+#### Limitations
+   ##### Incorporating Social Systems
+       1. It points out that technology and its underlying science are complemented by a social system that provides purpose, goals, and decision criteria.
+       2. The implication is that accidents should be analyzed not only from a technical perspective but also considering the broader social context.
+  ##### Limitations of the CoE Model
+   ###### System Accidents
+       1. The CoE model may have limitations when dealing with accidents involving entire systems. 
+       2. These accidents could be influenced by complex interactions between various components and the overall system architecture.
+  ###### Software Failures:
+      1. The model might face challenges in adequately addressing software failures.
+      2. Software is a critical component in many systems, and its failures may not always fit neatly into a linear chain of events.
+  ###### Human Error:
+      1. It points out that modelling human behaviour by breaking it down into individual decisions and actions might not be effective.
+      2. Understanding human behaviour requires consideration of the broader physical and social context, as well as the value system in which it occurs.
+#### Deviation from Normative Procedure vs. Established Practice:
+    1. This suggests that human errors may occur not just from deviating from established norms but also from established practices. 
+    2. It emphasizes the need to understand the context and the reasons behind deviations.

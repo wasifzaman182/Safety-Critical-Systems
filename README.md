@@ -1,4 +1,4 @@
-# Safety-Critical-Systems
+FUP# Safety-Critical-Systems
 This Repo will have all topics of safety-critical systems which is being taught in the HIS program at Frankfurt University
 
 # Complexity in software development 
@@ -51,8 +51,8 @@ Below are some of them.
 ## Fan-In and Fan-Out
     Fan-In measures the number of functions or methods that call a particular function or method. Fan-Out measures the number of functions or methods called by a specific function or method.
 
-## Coupling and Cohesion Metrics
-    Metrics related to the coupling and cohesion of software components provide insights into how interconnected and independent different system parts are. Low coupling and high 
+## Coling and Cohesion Metrics
+    Metrics related to the coling and cohesion of software components provide insights into how interconnected and independent different system parts are. Low coling and high 
     cohesion is generally desirable in safety-critical systems.
 
 ## Component Interactions
@@ -111,7 +111,7 @@ Below are some of them.
     members and the communities we serve, do hereby commit ourselves to the highest ethical and 
     professional conduct and agree: 
 
-### To uphold the highest standards of integrity, responsible behaviour, and ethical conduct in professional activities.
+### To hold the highest standards of integrity, responsible behaviour, and ethical conduct in professional activities.
     1. Prioritize the safety, health, and welfare of the public in professional activities.
     2. Strive to comply with ethical design principles and promote sustainable development practices.
     3. Protect the privacy of individuals and disclose factors that might pose risks to the public or the environment
@@ -128,8 +128,8 @@ Below are some of them.
     2. Do not engage in any form of harassment, including sexual harassment or bullying behaviour.
     3. Avoid causing harm to others, their property, reputation, or employment. Refrain from false or malicious actions, rumours, or any other verbal or physical abuse.
 
-### To strive to ensure this code is upheld by colleagues and co-workers.
-    1. to support colleagues and co-workers in following this code of ethics, to strive to ensure the code is upheld, and to not retaliate against individuals reporting a violation.  
+### To strive to ensure this code is held by colleagues and co-workers.
+    1. to sport colleagues and co-workers in following this code of ethics, to strive to ensure the code is held, and to not retaliate against individuals reporting a violation.  
 
 # Process for safety and reliability
     --> Ensuring safety and reliability in critical systems involves a systematic and rigorous process throughout the entire lifecycle of the system.
@@ -920,6 +920,8 @@ IEC 61508 has the following views on risks:
      8. Software model visualisation with UML.
      9. Careful requirements management.
      10. Practical change request and configuration management.
+![spiritOfRUP](https://github.com/wasifzaman182/Safety-Critical-Systems/assets/75499379/002e8055-3697-454f-a044-aff6985cf4d1)
+
      
 #### RUP & IEC61508 Combination
 
